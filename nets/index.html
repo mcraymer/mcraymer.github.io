@@ -1,0 +1,616 @@
+<HTML>
+<HEAD>
+<TITLE>Canadian Geodetic Networks - Home Page</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<CENTER>
+<H2>The Unofficial Home Page of</H2>
+<H1>Canadian Geodetic Networks</H1>
+<P>
+<H4>
+Michael Craymer, Ph.D.<BR>
+Coordinator, Reference Frames & Earth Dynamics<BR>
+Canadian Geodetic Survey, Natural Resources Canada<BR>
+588 Booth Street, Ottawa, Ontario K1A 0Y7, Canada
+<P>
+Tel. 613-791-0157, Fax. 613-995-3215<BR>
+Email: <A HREF="mailto:michael.craymer@canada.ca">michael.craymer@canada.ca</A><BR>
+Web: <A HREF="http://www.geodetic.org/networks/">www.geodetic.org/networks</A>
+</H4>
+
+<ADDRESS>
+Last revised 2015-10-24
+</ADDRESS>
+</CENTER>
+<P>
+<HR>
+<H3>Contents</H3>
+<OL>
+	<LI><A HREF="#itrf">International Terrestrial Reference Frame (ITRF)</A>
+	<LI><A HREF="#wgs84">World Geodetic System 1984 (WGS84)</A>
+	<LI><A HREF="#naref">North American Reference Frame (NAREF)</A>
+	<LI><A HREF="#nad83">NAD83(CSRS)</A>
+	<LI><A HREF="#gnss">GNSS Reference Frames</A>
+	<LI><A HREF="#transformations">Transformations</A>
+	<LI><A HREF="#cacs">Canadian Active Control System</A>
+	<LI><A HREF="#cbn">Canadian Base Network</A>
+	<LI><A HREF="#adjustments">Adjustments & Analysis</A>
+	<LI><A HREF="#software">Geodetic Software</A>
+	<LI><A HREF="#monumentation">Monumentation</A>
+	<LI><A HREF="#other">Other Links</A>
+	<LI><A HREF="#disclaimer">Disclaimer</A>
+</OL>
+<P>
+<HR>
+<A NAME="itrf"></A>
+<H2><A HREF="http://itrf.ensg.ign.fr/">International Terrestrial Reference Frame (ITRF)</A></H2>
+    <UL>
+    <LI><A HREF="http://itrf.ensg.ign.fr/">The International Terrestrial Reference Frame (ITRF)</A>.
+        Home page for the ITRF, including coordinates, transformations and publications.
+    <LI><A HREF="http://www.geod.nrcan.gc.ca/site/index_e/products_e/publications_e/papers_e/itrf2000.pdf">The
+        Terrestrial Reference Frame and the Dynamic Earth</A>. Preprint of article in EOS Transactions,
+        American Geophysical Union, Vol.82, No.25, June 19, 2001. In Adobe PDF format (280 KB).
+    <LI><A HREF="http://igscb.jpl.nasa.gov/">The International GPS Service (IGS)</A>. Source for precise orbits,
+        EOPs, and coordinates.
+    <LI><A HREF="ftp://itrf.ensg.ign.fr/pub/itrf/WGS84.TXT">ITRF and WGS84</A>. Explanation of differences
+        between ITRF and WGS84.
+    <LI><A HREF="http://www.iers.org/IERS/EN/DataProducts/Conventions/conventions.html">IERS Conventions</A>
+        Official definitions of celestial and terrestrial reference frames and adopted ITRF transformations.
+    <LI>IGS Reference Frame Transformations
+        <UL>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/1999/002507.html">Transformation between IGS96 and IGS97 [IGSMAIL-2432]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2001/003679.html">Transformation between IGS97 and IGS00 [IGSMAIL-3605]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2006/005526.html">Transformation between IGb00 and IGS05 [IGSMAIL-5455]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2011/006346.html">Transformation between IGS05 and IGS08 [IGSMAIL-6354]</A>
+        </UL>
+<!--
+    <LI><A HREF="http://ucscgi2.ncl.ac.uk/~nkn3/">SINEX File Checker</A>. On-line checking of SINEX
+        files with SLR or GPS data for SINEX format requirements. Also checks values from SITE/ID and
+        SITE/ECCENTRICITY blocks against igs.snx (GPS) or NCL created catalogue (SLR) files. From
+        University of Newcastle.
+-->
+    </UL>
+<P>
+<HR>
+<A NAME="wgs84"></A>
+<H2><A HREF="http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350_2.html">World Geodetic System 1984 (WGS84)</A></H2>
+    <UL>
+    <LI><B>WGS 84 (G730 & G873)</B> - <A HREF="http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf">Department of Defense World Geodetic System 1984: It's Definition and Relationships with Local Geodetic Systems</A>,
+        Third Edition, Ammendment 1, National Imagery and Mapping Agency Technical Report TR8350.2, 3 January 2000.
+    <LI><B>WGS 84 (G730)</B> - <A HREF="https://www.ion.org/publications/abstract.cfm?articleID=4074">Maintenance and Enhancement of the World Geodetic System 1984</A>,
+        by Malys and Slater, Proceedings of the 7th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GPS 1994).
+    <LI><B>WGS 84 (G730)</B> - <A HREF="https://www.ion.org/publications/abstract.cfm?jp=p&articleID=4043">Improved WGS 84 Coordinates for the DMA and Air Force GPS Tracking Sites</A>,
+        by Swift et al., Proceedings of the 7th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GPS 1994).
+    <LI><B>WGS 84 (G873)</B> - <A HREF="https://www.ion.org/publications/abstract.cfm?articleID=2806">Refinements to The World Geodetic System 1984</A>,
+        by Malys et al., Proceedings of the 10th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GPS 1997).
+    <LI><B>WGS 84 (G1150)</B> - <A HREF="http://earth-info.nga.mil/GandG/sathtml/IONReport8-20-02.pdf">A Refinement to the World Geodetic System 1984 Reference Frame</A>,
+        by Merrigan et al., Proceedings of the 15th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GPS 2002).
+    <LI><B>WGS 84 (G1150)</B> - <A HREF="http://earth-info.nga.mil/GandG/publications/tr8350.2/Addendum%20NIMA%20TR8350.2.pdf">Addendum to TR 8350.2: Implementation of the World Geodetic System (WGS 84) Reference Frame G1150</A>
+    <LI><B>WGS 84 (G1674)</B> - <A HREF="https://www.ion.org/publications/abstract.cfm?jp=p&articleID=10329">Recent Updates to the WGS 84 Reference Frame</A>,
+        by Wong et al., Proceedings of the 25th International Technical Meeting of The Satellite Division of the Institute of Navigation (ION GNSS 2012).
+    <LI><B>WGS 84 (G1762)</B> - <A HREF="http://earth-info.nga.mil/GandG/publications/NGA_STND_0036_1_0_0_WGS84/NGA.STND.0036_1.0.0_WGS84.pdf">Department of Defense World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems</A>,
+        National Geospatial-Intelligence Agency (NGA) Standardization Document NGA.STND.0036_1.0.0_WGS84, Version 1.0.0, 2014-07-08.
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2012/template/WGS_84.pdf">World Geodetic System 1984 (WGS84)</A>,
+        UN Office of Outer Space Affairs, International Committee on Global Navigation Satellite Systems (ICG)
+    </UL>
+<P>
+<HR>
+<A NAME="naref"></A>
+<H2><A HREF="http://www2.geod.nrcan.gc.ca/~craymer/naref/">North American Reference Frame (NAREF)</A></H2>
+<P>
+IAG Sub-Commission 1.3a: Regional Reference Frames - North America
+    <UL>
+    <LI><A HREF="http://www2.geod.nrcan.gc.ca/~craymer/naref/">NAREF Home Page</A>
+    <LI><A HREF="../pubs/naref_iag2001report.pdf">Report of the Subcommission for North America,
+        IAG Commission X (Global and Regional Geodetic Networks)</A> (Craymer et al., 2001). In Adobe
+        PDF format (80 KB).
+    <LI><A HREF="../pubs/naref_iag2001poster.pdf">The NAREF Initiative to Densify the ITRF in North
+        America</A> (Craymer & Piraszewski, 2001, poster). In Adobe PDF format (627 KB).
+    <LI><A HREF="../pubs/naref_kis2001.pdf">The North American Reference Frame (NAREF): An Initiative
+        to Densify the ITRF in North America</A> (Craymer & Piraszewski, 2001). In Adobe PDF format
+        (1024 KB).
+    <LI><A HREF="../pubs/naref_epn2001.pdf">The NAREF Initiative to Densify the ITRF in North America</A>        (Craymer & Piraszewski, 2001). In Adobe PDF format (1208 KB).
+    </UL>
+<P>
+<HR>
+<A NAME="regional"></A>
+<H2>Other Regional Reference Frames</H2>
+    <UL>
+    <LI><A HREF="http://www.euref-iag.net/">IAG Sub-Commission 1.3a: Regional Reference Frames - Europe (EUREF)</A>
+    <LI><A HREF="http://www.sirgas.org/">IAG Sub-Commission 1.3b: Regional Reference Frames - South & Central America (SIRGAS)</A>
+    <LI><A HREF="http://www.naref.org/">IAG Sub-Commission 1.3b: Regional Reference Frames - North America (NAREF)</A>
+    <LI><A HREF="http://geoinfo.uneca.org/afref/">IAG Sub-Commission 1.3d: Regional Reference Frames - Africa (AFREF)</A>
+    <LI><A HREF="http://www.sbsm.gov.cn/pcgiap/98wg/98wg1/aprgp_analysis/aprgp_analysis.htm">IAG Sub-Commission 1.3e: Regional Reference Frames - Asia & Pacific (APREF)</A>
+    <LI><A HREF="http://www.scar.org">IAG Sub-Commission 1.3f: Regional Reference Frames - Antarctic (SCAR)</A>
+    </UL>
+<P>
+<HR>
+<A NAME="nad83"></A>
+<H2>NAD83(CSRS)</H2>
+    <UL>
+    <LI><A HREF="nad83csrs/nad83evolution.pdf"><B>The Evolution of NAD83 in Canada</B></A> (Craymer, 2006).
+    <LI><A HREF="nad83csrs/nad83csrs.html">Realization and Unification of NAD83 in Canada and
+        the US via the ITRF</A> (Craymer et al., 1998; Revised 11 March 1999). Also available in
+        <A HREF="../pubs/nad83csrs.pdf">Adobe PDF format (133 KB)</A>.
+    <LI><A HREF="nad83csrs/integration.html">Integration of Local Surveys into CSRS</A> (Craymer, 1998). Also
+        available in <A HREF="../pubs/integration.pdf">Adobe PDF format (13 KB)</A>.
+    <LI><A HREF="../pubs/datums_geomatica98.pdf">Demystifying Reference Systems: A Chronicle of Spatial
+        Reference Systems in Canada</A> (Junkins & Garrard, 1998). In Adobe PDF format (52 KB).
+    <LI><A HREF="nad83csrs/nad83-itrf.gif">NAD83-ITRF Differences at CBN Points</A>
+    </UL>
+<P>
+<HR>
+<A NAME="gnss"></A>
+<H2>GNSS Reference Frames</H2>
+<P>
+Compiled by <A HREF="http://www.unoosa.org/oosa/en/ourwork/icg/resources/Regl-ref.html">International Committee on Global Navigation Satellite Systems (ICG)</A>,
+UN Office of Outer Space Affairs
+    <UL>
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2012/template/WGS_84.pdf">GPS - WGS84</A>
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2014/wg/PZ-90.11_2014.pdf">GLONASS - PZ-90</A>
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2012/template/CTRF2000.pdf">Beidou - CTRS/CTRF</A>
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2012/template/GTRF.pdf">Galileo - GTRS/GTRF</A>
+    <LI><A HREF="http://www.unoosa.org/pdf/icg/2012/template/QZSSupdated.pdf">QZSS - JGS</A>
+    </UL>
+<P>
+<HR>
+<A NAME="transformations"></A>
+<H2>Transformations</H2>
+    <UL>
+    <LI><A HREF="nad83csrs/nad83evolution.pdf"><B>The Evolution of NAD83 in Canada</B></A> (Craymer, 2006).
+        The definitive source for transformation parameters between NAD83(CSRS) and all versions of ITRF.
+    <LI><A HREF="nad83csrs/nad83itrf00_soler.pdf"><B>Transforming Positions and Velocities between the
+        International Terrestrial Reference Frame of 2000 and North American Datum of 1983</B></A>
+        (Soler & Snay, 2004). The same transformation is used in Canada.
+    <LI><A HREF="nad83csrs/nad83itrf.txt"><B>ITRF-NAD83 Transformation and Definition of NAD83(CSRS)</B></A>
+        (Craymer et al., 1998; Revised 2001-12-12). Added ITRF2000 reference frame, now used by IGS
+        products (precise orbits, coordinate solutions, etc).
+    <LI><A HREF="http://geodesy.noaa.gov/CORS/coords.shtml"><B>Current U.S. National Geodetic Survey Coordinate
+        Transformation between ITRF2008 and NAD83/NSRS</B></A> (same as NAD83/CSRS).
+    <LI><A HREF="http://geodesy.noaa.gov/CORS/coord_info/coordtrans_no_support_tables.shtml"><B>Prior U.S.
+        National Geodetic Survey Coordiante Transformations between various ITRF's and NAD83/NSRS</B></A>. Only
+        transformations since ITRF94 are the same as those used in Canada; i.e., those involving "NAD83 (CORS96).
+    <LI><A HREF="http://www.ngs.noaa.gov/PUBS_LIB/transformationITRF97toNAD83.html">New ITRF97-NAD83(CSRS)
+        Transformation Adopted by Canada and U.S.</A> US NGS Announcement. Note that some small but
+        insignificant differences exist due to round off errors in the transformation parameters adopted by
+        Canada and the U.S. Either set of paraemeters can be used to give mm resolution. The Canadian values
+        agree with the official IGS values to sub-mm resolution.
+    <LI><A HREF="nad83csrs/nad83csrs.html">Realization and Unification of NAD83 in Canada and the US via
+        the ITRF</A> (Craymer et al., 1999). Also available in <A HREF="nad83csrs/nad83csrs.pdf">Adobe PDF file
+        (133 KB)</A>.
+    <LI><A HREF="nad83csrs/nad83-itrf.gif">Plot of NAD83-ITRF Differences at CBN Points</A>
+        Transformation parameters between ITRF reference frames.
+    <LI>IERS Conventions 1996. Official definitions of celestial and terrestrial reference frames and adopted
+        models, constraints and standards.
+        <UL>
+        <LI><A HREF="http://www.usno.navy.mil/USNO/earth-orientation/eo-info/general/conv-1996">IERS Conventions 1996</A>
+        <LI><A HREF="http://tai.bipm.org/iers/conv2003/conv2003.html">IERS Conventions 2003</A>
+        <LI><A HREF="http://tai.bipm.org/iers/conv2010/conv2010.html">IERS Conventions 2010</A>
+        </UL>
+    <LI><A HREF="http://itrf.ensg.ign.fr/trans_para.php">ITRF Reference Frame Transformations</A>
+        <UL>
+        <LI><A HREF="http://itrf.ensg.ign.fr/doc_ITRF/Transfo-ITRF2008_ITRFs.txt">Transformations between ITRF2008 and previous realizations</A>
+        <LI><A HREF="http://itrf.ensg.ign.fr/ITRF_solutions/2005/tp_05-00.php">Transformation between ITRF2005 and ITRF2000</A>
+        <LI><A HREF="ftp://itrf.ensg.ign.fr/pub/itrf/ITRF.TP">Transformation between ITRF2000 and previous solutions</A>
+        <LI><A HREF="ftp://itrf.ensg.ign.fr/pub/itrf/WGS84.TXT">Relationship between WGS84 and ITRF</A>
+        </UL>
+    <LI>IGS Reference Frame Transformations
+        <UL>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/1999/002507.html">Transformation between IGS96 and IGS97 [IGSMAIL-2432]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2001/003679.html">Transformation between IGS97 and IGS00 [IGSMAIL-3605]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2006/005526.html">Transformation between IGb00 and IGS05 [IGSMAIL-5455]</A>
+        <LI><A HREF="https://igscb.jpl.nasa.gov/pipermail/igsmail/2011/006346.html">Transformation between IGS05 and IGS08 [IGSMAIL-6354]</A>
+        </UL>
+    <LI><A HREF="../pubs/transf_jg98.pdf">A Compendium of Transformation Formulas Useful for GPS Work</A>
+        (Soler, 1998; 239 KB). The original publication is available on LINK
+        <A HREF="http://link.springer.de">http://link.springer.de</A>.
+    </UL>
+
+    <H3>Software</H3>
+    <UL>
+    <LI><B>TRNOBS (Transform Observations)</B><BR>
+        Software to transform GHOST and GeoLab data files between NAD83(CSRS) and various ITRF
+        reference frames.
+        <UL>
+        <LI><A HREF="http://www.geod.nrcan.gc.ca/tools-outils/trnobs_e.php">On-Line Version</A>
+        <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/trnobs/">Software Archive</A>
+            <UL>
+            <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/trnobs/README.TXT">README.TXT</A> --
+                description of files
+            <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/trnobs/trnobs.txt">trnobs.txt</A> --
+                program documentation
+            </UL>
+        </UL>
+    <LI><B>HTDP (Horizontal Time Dependent Positioning)</B><BR>
+        Software from the <A HREF="http://www.ngs.noaa.gov/">US National Geodetic Survey</A> that, among other
+        things, can be used to transform between NAD83 and ITRF.
+        <UL>
+        <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/Htdp/Htdp_transform.html">On-Line Version</A>
+        <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/Htdp/Htdp.html">Software Description & Archive</A>
+        </UL>
+    <LI><B>NTv2 (National Transformation Version 2)</B><BR>
+        The Canadian national standard to transform between NAD27 and NAD83 reference systems.
+        <UL>
+        <LI><A HREF="http://www.geod.nrcan.gc.ca/tools-outils/ntv2_e.php">Software Description &
+            On-Line Version</A>
+        <LI><A HREF="ntv2plots/">Contour plots</A> of NAD27-NAD83 differences and other statistics
+            (see the <A HREF="ntv2plots/README.TXT">README.TXT</A> file)
+        </UL>
+    </UL>
+<P>
+<HR>
+<A NAME="cacs"></A>
+<H2>Canadian Active Control System</H2>
+    <UL>
+    <LI><A HREF="http://www.geod.nrcan.gc.ca/online_data_e.php"><B>Interactive
+        Map of CACS Network</B></A> (with station descriptions and coordinates; password required)
+    <LI><A HREF="ftp://cgrscftp@gauss.geod.nrcan.gc.ca/pub/cacs/">CACS solutions in CGRSC Data Archive</A>
+        (password required; restricted to CGRSC members)<BR>
+        Provides historic and currently adopted NAD83 & ITRF coordinates, confidence regions, and GHOST,
+        GeoLab & SINEX data files to use as constraints in adjustments. <B>Latest version is CACS v6.0</B>,
+        based on the ITRF2008/IGS08 reference frame or a densification of it</A>.
+    <LI><B>Histograms of absolute 95% confidence ellipsoids</B>
+        <UL>
+        <LI><A HREF="cbn30/conf_cacs30.gif">CACS 3.0</A> (based on ITRF97 solution)
+        <LI><A HREF="cbn30/conf_cacs40.gif">CACS 4.0</A> (based on ITRF2000 solution)
+        </UL>
+    <LI><A HREF="http://sideshow.jpl.nasa.gov/mbh/series.html">JPL Coordinate time series for ACP/CORS/IGS
+        sites in/near Canada</A><BR>
+        Canada<BR>
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/ALBH.jpg">ALBH</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/ALGO.jpg">ALGO</A>, 
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BAIE.gif">BAIE</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BAKE.gif">BAKE</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BAMF.gif">BAMF</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BCOV.gif">BCOV</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BEA2.gif">BEA2</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/CAGS.gif">CAGS</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/CHUR.gif">CHUR</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/CHWK.gif">CHWK</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/DRAO.gif">DRAO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/DUBO.gif">DUBO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/ELIZ.gif">ELIZ</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/ESCU.gif">ESCU</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/EURK.gif">EURK</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/FLIN.gif">FLIN</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/FRED.gif">FRED</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/HLFX.gif">HLFX</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/HOLB.gif">HOLB</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/HOLM.gif">HOLM</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/HRST.gif">HRST</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/INVK.gif">INVK</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/IQAL.gif">IQAL</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/KNGS.gif">KNGS</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/MCHN.gif">MCHN</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NAIN.gif">NAIN</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NANO.gif">NANO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NRC1.gif">NRC1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NRC2.gif">NRC2</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NTKA.gif">NTKA</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PARY.gif">PARY</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PGC5.gif">PGC5</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PRDS.gif">PRDS</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PTAL.gif">PTAL</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PTRF.gif">PTRF</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/PWEL.gif">PWEL</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/QUAD.gif">QUAD</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/QIKI.gif">QIKI</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/RESO.gif">RESO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/ROSS.gif">ROSS</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/SACH.gif">SACH</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/SASK.gif">SASK</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/SC04.gif">SC04</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/SCH2.gif">SCH2</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/STJO.gif">STJO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/TUKT.gif">TUKT</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/UCLU.gif">UCLU</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/UNB1.gif">UNB1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/UNBJ.gif">UNBJ</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/VALD.gif">VALD</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/WHIT.gif">WHIT</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/WILL.gif">WILL</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/WSLR.gif">WSLR</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/YELL.gif">YELL</A><BR>
+        USA<BR>
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/AIS1.gif">AIS1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BARH.gif">BARH</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BREW.gif">BREW</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/CHB1.gif">CHB1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/EPRT.gif">EPRT</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/FAIR.gif">FAIR</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/GODE.gif">GODE</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/GUS2.gif">GUS2</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NEAH.gif">NEAH</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/NLIB.gif">NLIB</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/SEDR.gif">SEDR</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/USNO.gif">USNO</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/WES2.gif">WES2</A><BR>
+        Bermuda<BR>
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/BRMU.gif">BRMU</A><BR>
+        Greenland<BR>
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/KELY.gif">KELY</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/QAQ1.gif">QAQ1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/THU1.gif">THU1</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/THU2.gif">THU2</A>,
+        <A HREF="http://sideshow.jpl.nasa.gov/mbh/all/plots/THU3.gif">THU3</A>
+    </UL>
+<P>
+<HR>
+<A NAME="cbn"></A>
+<H2>Canadian Base Network</H2>
+    <UL>
+    <LI><A HREF=http://www.geod.nrcan.gc.ca/online_data_e.php><B>Interactive
+        Map of CBN Network</B></A> (with station descriptions and coordinates; password required)
+    <LI><A HREF="ftp://cgrscftp@gauss.geod.nrcan.gc.ca/pub/cbn/">CBN solutions in CGRSC Data Archive</A>
+        (password required)<BR>
+        Provides historic and currently adopted NAD83 & ITRF coordinates, confidence regions, and GHOST, GeoLab
+        & SINEX data files to use as constraints in adjustments. <B>Latest version is CBN v6.0</B>, based on a
+        densification of the ITRF2008/IGS08 reference frame.
+    <LI>Network Maps
+        <UL>
+        <LI><A HREF="cbn31/cbn31.jpg">CBN 3.1</A>
+        <LI><A HREF="cbn31/cbn31adj.jpg">CBN 3.1 Adjustment</A>
+        <LI><A HREF="cbn30/cbn30.jpg">CBN 3.0</A>
+        <LI><A HREF="cbn30/cbn30adj.jpg">CBN 3.0 Adjustment</A>
+        <LI><A HREF="nad83csrs/nad83-itrf.gif">NAD83-ITRF Differences at CBN Points</A>
+        </UL>
+    <LI><B>Histograms of absolute 95% confidence ellipsoids</B>
+        <UL>
+        <!--
+        <LI>CBN v4.0 (plots in preparation)
+            <UL>
+            <LI><A HREF="cbn40/conf_cacs.gif">Adjusted CACS Stations</A> (not the adopted solution)
+            <LI><A HREF="cbn40/conf_cbn.gif">CBN Stations</A>
+            </UL>
+        -->
+        <LI>CBN v3.0 (no significant difference with v3.1)
+            <UL>
+            <LI><A HREF="cbn30/conf_cacs.gif">Adjusted CACS Stations</A> (not the adopted solution)
+            <LI><A HREF="cbn30/conf_cbn.gif">CBN Stations</A>
+            <LI><A HREF="cbn30/conf_basenets.gif">GPS Basenet Stations</A>
+            <LI><A HREF="cbn30/conf_gpsbm.gif">GPS on BM Stations</A>
+            <LI><A HREF="cbn30/conf_ccg.gif">Canadian Coast Guard Stations</A>
+            <LI><A HREF="cbn30/conf_nad83horz.gif">NAD83 Primary Horizontal Control Stations</A>
+            <LI><A HREF="cbn30/conf_maritimes.gif">Maritime Provincial Stations</A>
+            <LI><A HREF="cbn30/conf_quebec.gif">Quebec Provincial Stations</A>
+            <LI><A HREF="cbn30/conf_ontario.gif">Ontario Provincial Stations</A>
+            <LI><A HREF="cbn30/conf_saskatchewan.gif">Saskatchewan Provincial Stations</A>
+            <LI><A HREF="cbn30/conf_alberta.gif">Alberta Provincial Stations</A>
+            <LI><A HREF="cbn30/conf_ngs.gif">US National Geodetic Survey Stations</A>
+            </UL>
+        </UL>
+    <LI>CBN v3.0 Versus NAD83(Adopted)
+        <UL>
+        <LI><A HREF="cbn30/cbn30nad83dif.lis">Listing of differences</A>
+        <LI><A HREF="cbn30/cbn30nad83dif.gif">Plot of differences</A>
+        </UL>
+    <LI>CBN v2.0 Versus NAD83(Adopted)
+        <UL>
+        <LI><A HREF="cbn20/cbn20nad83dif.lis">Listing of differences</A>
+        <LI><A HREF="cbn20/cbn20nad83dif-e.gif">CBN East plot of differences</A>
+        <LI><A HREF="cbn20/cbn20nad83dif-w.gif">CBN West plot of differences</A>
+        <LI><A HREF="cbn20/cbn20nad83dif-ont.gif">Southern Ontario plot of differences (lat 42-47, long 75-85 w)</A>
+        <LI><A HREF="cbn20/cbn20nad83dif-mont.gif">Montreal area plot of differences (lat 45-47, long 73-75 w)</A>
+        <LI><A HREF="cbn20/cbn20conf.gif">CBN v2.0 absolute 95% confidence ellpsoids</A>
+        </UL>
+    </UL>
+<P>
+<HR>
+<A NAME="adjustments"></A>
+<H2>Adjustments & Analysis</H2>
+    <UL>
+        <LI><A HREF="ftp://cgrscftp@gauss.geod.nrcan.gc.ca/pub/">Canadian Geodetic Reference System Committee Data Archive</A>
+            (restricted to CGRSC members; password required)
+        <LI>Recommended Procedure for the Adjustment of Individual GPS Baseline Solutions (Craymer, 1995; Revised 1996) --
+            <A HREF="../pubs/gpsadj96.pdf">Adobe PDF file (5 KB)</A>
+        <LI>Session Versus Baseline GPS Processing (Craymer & Beck, 1992) --
+            <A HREF="../pubs/gps_ion92.pdf">Adobe PDF file (49 KB)</A>
+        <LI>Specifications for Urban GPS Surveys (Craymer et al., 1990) --
+            <A HREF="../pubs/salis90.pdf">Adobe PDF file (36 KB)</A>
+        <LI>Development and Testing of In-Context Confidence Regions for Geodetic Survey Networks (Krakiwsky et al., 1999) --
+            <A HREF="../pubs/incontext99.pdf">Adobe PDF file (153 KB)</A>
+        <LI>Robustness Analysis (Vanicek et al., 1991) --
+            <A HREF="../pubs/robust91.zip">Adobe PDF files compressed in PK-ZIP format (169 KB)</A>
+        <LI>Application of Robustness Analysis to Large Geodetic Networks (Vanicek et al., 1996) --
+            <A HREF="../pubs/robust96.zip">Adobe PDF files compressed in PK-ZIP format (1440 KB)</A>
+        <LI>Robustness Analysis of Geodetic Horizontal Networks (Vanicek et al., 2001). The original publication
+            is available on LINK
+            <A HREF="http://link.springer.de">http://link.springer.de</A> --
+            <A HREF="../pubs/robust_jg2001a.pdf">Adobe PDF file (247 KB)</A>
+        <LI>Comparison of Reliability and Geometrical Strength Criteria in Geodetic Networks (Seemkooei, 2001).
+            The original publication is available on LINK
+            <A HREF="http://link.springer.de">http://link.springer.de</A> --
+            <A HREF="../pubs/robust_jg2001b.pdf">Adobe PDF file (120 KB)</A>
+    </UL>
+<P>
+<P>
+<HR>
+<A NAME="software"></A>
+<H2>Geodetic Software</H2>
+    <UL>
+        <LI>GHOST Adjustment Software
+            <UL>
+                <LI><A HREF="http://www.geodetic.org/ghost/">GHOST User's Group Home Page</A>
+                <LI><A HREF="ftp://ghostftp@gauss.geod.nrcan.gc.ca/">GHOST Software Archive</A> (password required)
+                <LI><A HREF="http://www.geodetic.org/ghost/doc/">GHOST Documentation</A>
+            </UL>
+        <LI>GSD GPS-Related Software & Guidelines
+            <UL>
+                <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en">CSRS-PPP</A>
+                    (from Geodetic Survey Division, Natural Resources Canada). Provides precise cm-level GPS
+                    coordinates with respect to NAD83(CSRS) and the International Terrestrial Reference Frame
+                    (ITRF).
+                <!--
+                <LI><A HREF="http://www2.geod.nrcan.gc.ca/~bourassa/software/">Guildelines for Survey-Related Software at GSD</A>
+                    (restricted access)
+                <LI><A HREF="http://www2.geod.nrcan.gc.ca/~bourassa/bernese">Bernese GPS Software Support at GSD</A>
+                    (restricted access)
+                -->
+            </UL>
+        <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/geomatics/geodetic-reference-systems/tools-applications/10925">GSD On-Line Geodetic Applications</A>
+            <UL>
+                <LI><A HREF="http://www.geod.nrcan.gc.ca/products-produits/ppp_e.php">CSRS-PPP</A>
+                    -- Precise Point Positioning in both NAD83(CSRS) and ITRF
+                    <A HREF="http://webapp.geod.nrcan.gc.ca/geod/process/download-helper.php?file_id=PPPdirect">Download PPP Direct for Windows</A>.
+               <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/tools-outils/trx.php?locale=en">TRX</A>
+                    -- Transformation of geodetic coordinates between reference frames/epochs and conversion
+                    of coordinates between coordinate systems (i.e., Cartesian, ellipsoidal and projections).
+                    Replaces TRNOBS & GSRUG.
+                    <A HREF="http://webapp.geod.nrcan.gc.ca/geod/process/download-helper.php?file_id=trx">Download Windows software</A>.
+                <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/tools-outils/trx.php?locale=en">GPS-H</A>
+                    -- GPS Height Transformation Between ellipsoidal heights with respect to various reference frames
+                    and orthometric heights with respect to various geoids in Canada
+                    <A HREF="http://webapp.geod.nrcan.gc.ca/geod/process/download-helper.php?file_id=gpsh">Download Windows software</A>.
+                <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ntv2.php?locale=en">NTv2</A>
+                    -- National Transformation v2 Between NAD27 and NAD83 in Canada
+                    <A HREF="http://webapp.geod.nrcan.gc.ca/geod/process/download-helper.php?file_id=ntv2">Download Windows software</A>.
+                <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/tools-outils/indir.php?locale=en">INDIR</A>
+                    -- Direct and Inverse Geodetic Computations
+            </UL>
+        <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/">US NGS On-Line Geodetic Toolbox</A>
+            <UL>
+                <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/Htdp/Htdp.html">HTDP: Horizontal Time-Dependent Positioning</A>
+                <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/XYZ/xyz.html">XYZ Coordinate Conversion</A>
+                <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/utm.html">UTM Coordinate Conversions</A>
+                <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/spc.html">US State Plane Coordinate Conversions</A>
+                <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/Inv_Fwd/Inv_Fwd.html">Computation of the Forward and Inverse Geodetic Problem</A>
+                <LI><A HREF="http://www.ngs.noaa.gov/cgi-bin/GEOID_STUFF/geoid09_prompt1.prl">GEOID09</A>
+                    -- Hybrid geoid model for USA; transforms between NAD83 ellipsoidal heights and NAVD88 orthometric heights
+                <LI><A HREF="http://www.ngs.noaa.gov/cgi-bin/GEOID_STUFF/usgg2009_prompt1.prl">USGG09</A>
+                    -- Gravimetric geoid model for USA; transforms between NAD83 or ITRF ellipsoidal heights and true orthometric heights
+            </UL>
+        <LI><A HREF="http://webapp.geod.nrcan.gc.ca/geod/process/download-helper.php?file_id=gpsh">TRX</A><BR>
+            (from Geodetic Survey Division, Natural Resources Canada). Software to transform coordinates between reference
+            frames & epochs and convert coordinates between different coordinate systems (i.e., Cartesian, ellipsoidal and
+            projections).
+            For a description of the software, see the text file
+            <A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/trnobs/trnobs.txt">trnobs.txt</A>.
+        <LI><A HREF="http://www.whoi.edu/marine/ndsf/utility/NDSFutility.html">Woods Hole Institution's NDSF Coordinate Conversion Utility</A>
+            Converts between Latitude/Longitude, UTM and X/Y coordinate systems. Note that X/Y is defined by WHOI as a
+            topocentric Cartesian coordinate system at a user-defined location with X defined as the axis pointing towards
+            east and Y pointing towards north (i.e., a right-handed coordinate system). The usual geodetic convention is to
+            define the topocentric system as a left-handed Cartesian coordinate system (referred to as the local geodetic
+            system) with X pointing towards north, Y pointing towards east and Z pointing vertically up.
+        <LI><A HREF="http://sopac.ucsd.edu/convertDate.shtml">SOPAC Online Date Converter</A><BR>
+            Converts between various date formats, including GPS week + day of week, year + day of year,
+            decimal year, modified Julian date, and year + month + day.
+        <LI><B>Free GPS Data Processing Services</B></A>
+            <UL>
+                <LI><A HREF="hhttp://apps.gdgps.net">
+                    Automated Precise Positioning Service (APPS)</A>
+                    (from Jet Propulsion Laboratory, California Institute of Technology). A free GPS
+                    data processing service using the <A HREF="https://gipsy-oasis.jpl.nasa.gov/">GIPSY/OASIS-II (GOA-II)</A>
+                    PPP software and observation files in RINEX format. Estimates coordinates of a single site using
+                    precise point positioning (precise orbits and clocks). Upload RINEX files via Web, FTP or email. Replaces
+                    original AutoGIPSY service.
+                <LI><A HREF="http://sopac.ucsd.edu/scout.shtml">
+                    Scripps Coordinate Update Tool (SCOUT)</A>
+                    (from Scripps Orbit and Permanent Array Center). A free Web/FTP-based GPS data processing service
+                    using the GAMIT software. Estimates coordinates of a single site using IGS stations as fiducial
+                    points (you can specify which to use or have SCOUT select the nearest ones). To use, your RINEX
+                    file must be accessable via anonymous FTP or you must upload it to their anonymous FTP server.
+                <LI><A HREF="http://www.ngs.noaa.gov/OPUS/">
+                    OnLine Positioning User Service (OPUS) </A>
+                    (from US National Geodetic Survey). A free Web-based GPS data processing service based on NGS's
+                    PAGES software. Allows users to submit a GPS RINEX observation data file where the data will be
+                    processed to determine a position by averaging baseline solutions to three nearest CORS stations.
+                <LI><A HREF="http://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/auspos">
+                    AUSPOS -- Online GPS Processing Service</A>
+                    (from Geoscience Australia). A free Web-based GPS data processing service that allows users to
+                    submit dual frequency, geodetic quality, GPS data in RINEX format observed in a 'static' mode
+                    and receive rapid turn-around coordinates in ITRF or GDA. This service takes advantage of both
+                    IGS products and the IGS GPS network using the <A HREF="http://www.bernese.unibe.ch/">Bernese
+                    GNSS Software</A> and works with data collected anywhere on Earth.
+                <!--
+                <LI><A HREF="http://www.dgps.com/inversemail.asp">
+                    DCI Wide Area DGPS Correction Service</A>
+                    A free mail-based DGPS correction service. Email uncorrected NMEA-format data files
+                    to DCI and corrected results will be returned via email.
+                -->
+            </UL>
+        <LI><A HREF="http://www.craymer.com/software/">Mike's Software Archive</A><BR>
+            A collection of some of some Fortran & <A HREF="http://www.mathworks.com/">MATLAB</A> software
+            programs and libraries by Mike and others.
+        <LI><A HREF="http://www.ngs.noaa.gov/gps-toolbox/">GPS Toolbox</A><BR>
+            Discussion forum and archive of source code and algorithms discussed in the GPS Toolbox
+            column of the journal <A HREF="http://www.interscience.wiley.com/jpages/1080-5370/">GPS Solutions</A>.
+    </UL>
+<P>
+<HR>
+<A NAME="monumentation"></A>
+<H2>Monumentation</H2>
+    <UL>
+    <!--
+    <LI><A HREF="">Western Canada Deformation Array (WCDA)</A> Monumentation
+        <UL>
+        <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/energy-mineral/geology/geodynamics/western-canada-deformation-array/9798">New Monument Design</A>
+        <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/energy-mineral/geology/geodynamics/western-canada-deformation-array/7196">GPS Pier and Antenna Schematic</A>
+        </UL>
+    -->
+    <LI><A HREF="http://www.ngs.noaa.gov/PUBS_LIB/CORS_guidelines.pdf">Guidelines for New and Existing Continuously Operating Reference Stations (CORS)</A>,
+        U.S. National Geodetic Survey, January 2013. See Chapter "Guidelines for Establishing and Operating a CORS",
+        Section "B. Monumentation".
+    <LI><A HREF="National Geodetic Survey Guidelines for Real Time GNSS Networks, Version 2.2">, December 2013.
+        See Chapter II, CORS/RTN Monument Construction Guidelines.
+    <LI>National Continuously Operating Reference Station (National CORS) Site Monumentation<BR>, National Geodetic Survey
+        Process Action Team 20, Final Report, U.S. National Geodetic Survey, December 20, 2000.
+        <UL>
+        <LI><A HREF="monumentation/CORS_Monumentation.pdf">Main report</A>
+        <LI><A HREF="monumentation/CORS_Monumentation_AppA.pdf">Appendix A: Report on the Installation of the National CORS Prototype Monument</A>
+        <LI><A HREF="monumentation/CORS_Monumentation_AppB.pdf">Appendix B: Guidelines for Setting a National CORS Monument</A>
+        </UL>
+    <LI><A HREF="monumentation/CORS_Monument_Procedure.pdf">Procedures For Setting A CORS Monument</A><BR>
+        U.S. National Geodetic Survey guidelines used by <A HREF="http://www.unavco.ucar.edu/project_support/suominet/suominet.html">SuomiNet</A>
+        (a slight variation of the above Appendix B).
+    </UL>
+<P>
+<HR>
+<A NAME="other"></A>
+<H2>Other Links</H2>
+    <UL>
+    <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/geomatics/geodetic-reference-systems/">Geodetic Survey Division</A>
+    <P>
+    <LI><A HREF="http://www.geod.nrcan.gc.ca/partners_e.php">Canadian Geodetic Reference System Committee (CGRSC)</A>
+        <UL>
+        <LI><A HREF="http://www.geod.nrcan.gc.ca/partners_e.php">CGRSC Web Site</A><BR>
+            Contains terms of reference, list of member agencies, meeting minutes and presentations, and link to data archive
+            (access restricted to members; password required)
+        <LI><A HREF="ftp://cgrscftp@gauss.geod.nrcan.gc.ca/pub/">CGRSC Data Archive (FTP)</A><BR>
+            Contains historic and current CACS and CBN coordinate solutions in NAD83(CSRS) (access restricted to members;
+            password required).
+        </UL>
+    <P>
+    <LI><A HREF="http://www.geodetic.org/">Mike's On-line Geodesy Resources</A>
+        <UL>
+        <LI><A HREF="http://www.geodetic.org/geodesy.html">Geodesy and astronomy information and software</A>
+        <LI><A HREF="http://www.geodetic.org/gps.html">GPS information and software</A>
+        <LI><A HREF="http://www.geodetic.org/tcg/">Tables of Contents in Geodesy</A>
+        <LI><A HREF="http://www.geodetic.org/craymer-pubs.html">Mike's Publications</A>
+        </UL>
+    </UL>
+<P>
+
+<!-- ---------------------------------------------------------------------------- -->
+<HR>
+<A NAME="disclaimer"></A>
+<H2>Disclaimer</H2>
+<P>
+These web pages are the sole responsibility of Michael Craymer. They are not
+an official product of the Canadian Geodetic Survey or the Government of Canada.
+Michael Craymer makes no guarantees, representations or warranties respecting
+the contents of these Web pages, either expressed or implied, arising by law or
+otherwise, including but not limited to, effectiveness, completeness, accuracy
+and fitness for a particular purpose. Michael Craymer shall not be liable in
+respect of any claim, demand or action, irrespective of the nature of the cause
+of the claim, demand or action alleging any loss, injury or damages, direct or
+indirect, which result from the use of these Web pages. Any mention of
+commercial products does not imply an endorsement of those products.
+<P>
+<CENTER>
+<A HREF="http://www.apple.com/"><IMG BORDER="0" SRC="../images/macmade.gif"
+  WIDTH="88" HEIGHT="31" ALIGN=bottom NATURALSIZEFLAG="3" ALT="MacMade"></A>
+<A HREF="http://www.adobe.com/products/acrobat/readstep.html"><IMG SRC="../images/acrobat.gif"
+BORDER="0" ALT="Adobe Acrobat"></A>
+</CENTER>
+</BODY>
+</HTML>

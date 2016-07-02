@@ -1,0 +1,101 @@
+<HTML>
+<HEAD><TITLE>SPADE</TITLE></HEAD>
+<BODY BGCOLOR="#000000" TEXT="#DDDDDD" LINK="#33DD88" VLINK="#CC44BB"
+ BACKGROUND="../../images/night-sky.gif">
+
+<CENTER>
+<H1>N E T S T R N</H1>
+<H2>Network Strain Analysis Software<BR>
+Version 01 Feb 90</H2>
+<P>
+Michael R. Craymer<BR>
+Kanata, Ontario, Canada<BR>
+<A HREF="http://www.craymer.com/">www.craymer.com</A><BR>
+<BR>
+<BR>
+<P>
+[ <A HREF="index.html">Description</A>
+| <A HREF="#req">System Requirements</A>
+| <A HREF="#regn">Registration</A>
+| <A HREF="#demo">Demo Version</A>
+| <A HREF="#guide">User's Guide</A> ]
+</CENTER>
+<P>
+<HR>
+<P>
+<H2>Description</H2>
+<P>
+NETSTRN is a software package that determines point strain parameters
+for a coordinate displacement field derived from two given sets of
+geodetic coordinates of points in a network. Also included is a
+basic plotting program (PLTSTRN) for depicting the strain parameters
+on-screeen.
+<P>
+The strain computation algorithm employed by NETSTRN is based on the
+methods used in the NETVAL software for analysing the strength of
+geodetic networks. For details, see:
+<P>
+Craymer, Vanicek and Tarvydas (1989). NETAN -- A computer program
+for the interactive analysis of geodetic networks. CISM Journal,
+Vol. 43, No. 1, Spring 1989, pp. 25-37.
+<P>
+The following files are provided with the software package:
+
+	README.TXT    Documentation file
+	NETSTRN.CMD   Input command file for NETSTRN
+	NETSTRN.EXE   PC executable code for NETSTRN
+	NETSTRN.FOR   Source code for NETSTRN
+	PLTSTRN.EXE   PC executable code for PLTSTRN
+	PLTSTRN.FOR   Source code for PLTSTRN
+	COMMON1.INC   Include file for NETSTRN
+	COMMON2.INC   Include file for NETSTRN
+	FLPS.BAT      Lahey F77L compile/link batch file for PLTSTRN
+	ABSM.DAT      Data file for test network by ABSM
+	GSI.DAT       Data file for test network by GSI
+	WWD.DAT       Data file for test network by WWD
+	ABSM-GSI.CMD  Command file for ABSM-GSI comparison
+	ABSM-GSI.STR  Output strain results for ABSM-GSI
+	ABSM-GSI.PLT  Output plotting data for PLTSTRN program
+	GSI-WWD.CMD   Command file for GSI-WWD comparison
+	GSI-WWD.STR   Output strain results for GSI-WWD
+	GSI-WWD.PLT   Output plotting data for PLTSTRN program
+
+Note that these programs were written for the Lahey Fortran compiler.
+The PLTSTRN program also uses the PLOT88 graphics library. Significant
+changes will likely be required for other graphics libraries.
+<P>
+<HR>
+<P>
+<A NAME="req">
+<H2>System Requirements</H2>
+<P>
+The NETSTRN.EXE and PLTSTRN.EXE executable files are command-line programs
+that have been compiled for a Windows computer. The NETSTRN source code
+has been successfully compiled with the Lahey F77L Fortran compiler and 
+should be portable to an other Fortran 77 compilers supporting the common
+VAX extensions. The PLTSTRN source code has also been successfully compiled
+with the Lahey F77L compiler and the PLOT88 graphics library. Significant
+changes will likely be required for other graphics libraries.
+<P>
+<HR>
+<P>
+<A NAME="download">
+<H2>Download</H2>
+<P>
+<A HREF="http://www.craymer.com/software/netstrn/netstrn.zip">netstrn.zip (403 KB)</A>
+<P>
+<HR>
+<P>
+<A NAME="doc">
+<H2>Support</H2>
+<P>
+NETSTRN is presently distributed free of charge but without any
+support or garranty of fitness for a particular purpose. Use at
+your own risk.
+<P>
+<HR>
+Last revised: 20 January 2009
+</P>
+</BODY>
+</HTML>
+

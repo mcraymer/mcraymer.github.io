@@ -1,0 +1,138 @@
+<HTML>
+<HEAD><TITLE>SPADE</TITLE></HEAD>
+<BODY BGCOLOR="#000000" TEXT="#DDDDDD" LINK="#33DD88" VLINK="#CC44BB"
+ BACKGROUND="../../images/night-sky.gif">
+
+<CENTER>
+<H1>N E T V A L</H1>
+<H2>GPS Network Validation Software<BR>
+Version 1.6</H2>
+<P>
+Michael R. Craymer<BR>
+Kanata, Ontario, Canada<BR>
+<A HREF="http://www.craymer.com/">www.craymer.com</A><BR>
+<BR>
+<BR>
+<P>
+[ <A HREF="index.html">Description</A>
+| <A HREF="#req">System Requirements</A>
+| <A HREF="#regn">Registration</A>
+| <A HREF="#demo">Demo Version</A>
+| <A HREF="#guide">User's Guide</A> ]
+</CENTER>
+<P>
+<HR>
+<P>
+<H2>Description</H2>
+<P>
+NETVAL is a software package that provides analysis tools for
+evaluating GPS surveys.  It is well known that traditional methods of
+assessing the accuracy of networks using 95% confidence regions are
+too unreliable for GPS.  Consequently many government agencies are now
+developing specifications for GPS surveys following the approach
+advocated by Craymer, Vanicek and Wells in their "Report on Urban GPS
+Research Project, Phase III Ð Evaluation, Volume 3, Specifications and
+Guidelines" prepared for the City of Edmonton.  By this approach
+potential contractors are required to demonstrate their ability to
+perform GPS surveys to a specified accuracy on a test network.  NETVAL
+can be used to evaluate such results and to determine whether or not
+the required accuracy has been achieved.
+<P>
+NETVAL is primarily designed for use by agencies responsible for
+contracting out GPS surveys.  NETVAL will permit these agencies to
+check whether a potential contractor's GPS results meet a specified
+accuracy.  Presently the Province of Alberta and the Canadian Geodetic
+Survey both use NETVAL to evaluate potential GPS contractors on their
+test networks.  In addition to validating potential GPS contractors,
+NETVAL can also provide a check on the accuracy of densification
+networks by comparing computed positions at control points with their
+known values.
+<P>
+Potential contractors can also benefit from NETVAL by checking that
+their procedures for GPS surveys are capable of satisfying the
+accuracies required by contracting agencies.  This can be done prior
+to any validation testing by the contracting agency thereby avoiding
+embarrassing failures.
+<P>
+NETVAL evaluates both the internal and external accuracy of a
+3-dimensional network using a variety of network analysis tools.  The
+internal accuracy is based on the covariance matrix of the GPS network
+which is known not to be very reliable.  The external accuracy
+analyses provides a more reliable method to assess the quality of the
+results by comparing them to known values established by higher order
+standards.
+<P>
+NETVAL consists of the following suite of 6 programs:
+<DL>
+	<DT>NETDAT</DT>
+		<DD>Converts GeoLab data files to the format required for
+		input to the following NETVAL programs.</DD>
+	<DT>NETREG</DT>
+		<DD>Evaluates the internal accuracy of a network by computing
+		1-d, 2-d and 3-d absolute and relative confidence regions at a
+		specified confidence level for all stations and station pairs.
+		 The sizes of the regions are checked against the maxima
+		allowed by 1st, 2nd or 3rd order specifications.</DD>
+	<DT>NETDIF</DT>
+		<DD>Evaluates the external accuracy by analysing the
+		coordinate differences between the test results and the known
+		positions.  The differences are checked against the maxima
+		allowed by 1st, 2nd or 3rd order specifications and a variety
+		of statistical tests are used to check the compatibility of
+		the test results with the known positions.</DD>
+	<DT>NETRAN</DT>
+		<DD>Evaluates the external accuracy by computing datum
+		differences such as translations, rotations and scale
+		differences between the test results and known positions.  The
+		test network may optionally be corrected for any such datum
+		differences for further analyses.</DD>
+	<DT>NETSTR</DT>
+		<DD>Evaluates the external accuracy by computing local
+		distortions of the test results with respect to the known
+		positions.  The distortions are given in terms of strain
+		parameters at each point.</DD>
+	<DT>PLTSTR</DT>
+		<DD>Graphically displays and prints the strain parameters
+		determined by NETSTR for easy identification of distorted
+		areas of the network.  NO LONGER DISTRIBUTED DUE TO
+		INCOMPATIBILITY WITH MODERN PC'S.</DD>
+</DL>
+<P>
+<HR>
+<P>
+<A NAME="download">
+<H2>Download</H2>
+<P>
+<A HREF="http://www.craymer.com/software/netval/netval16.zip">netval16.zip (403 KB)</A>
+<P>
+<HR>
+<P>
+<A NAME="req">
+<H2>System Requirements</H2>
+<P>
+NETVAL is written in ANSI Fortran 77 and is provided as DOS
+executables that can be run on Windows computers. The graphics program
+PLTSTR requires an EGA-compatible graphics adapter and is not likely
+to work in more recent PC's.
+<P>
+<HR>
+<P>
+<A NAME="doc">
+<H2>Documentation & Support</H2>
+<P>
+The NETVAL software package includes an extensive reference manual
+describing the input and output for all programs, the algorithms used
+and guidelines for interpreting the results.  The manual can also be
+downloaded separately at the following link:
+<P>
+<A HREF="http://www.craymer.com/software/netval/NETVAL_Ref.pdf">NETVAL_Ref.pdf (141 KB)</A>
+<P>
+NETVAL is presently being distributed free of charge but without any
+support. Use at your own risk.
+<P>
+<HR>
+Last revised: 24 October 2009
+</P>
+</BODY>
+</HTML>
+

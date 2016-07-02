@@ -1,0 +1,57 @@
+
+SALIS JOURNAL COVERAGE
+----------------------
+
+Journal                                             Code   Last  New Issues
+--------------------------------------------------- -----  ----  ------------------
+TCG Journals
+
+   Acta Geodaetica et Geophysica Hungarica          agg
+   Allgemeine Vermessungs-Nachrichten               avn
+   Artificial Satellites                            asat
+   Bollettino di Geodesia e Scienze Affini          bgsa
+   Computers & Geosciences                          cageo
+   Geodezja i Kartografia                           gik
+   Geomatica                                        geom
+ * Geomatics Info Magazine                          gim
+   Geophysical Journal International                gji
+   Geophysical Research Letters                     grl
+   GPS Solutions                                    gpss
+ * GPS World                                        gpsw
+   Inside GNSS                                      ignss
+   Journal of Geodesy                               jg
+   Journal of Geodynamics                           jog
+   Journal of Geophysical Research - Solid Earth    jgr
+   Journal of Geospatial Engineering				jge
+   Journal of Global Positioning Systems            jgps
+   Journal of Spatial Science						jss
+   Journal of Surveying Engineering                 jse
+   Marine Geodesy                                   mgd
+   Metrologia										met
+   Navigation                                       nav
+   Physics and Chemistry of the Earth				pce
+ * Professional Surveyor                            ps
+   Studia Geophysica et Geodaetica                  sgg
+   Survey Review                                    sr
+   Survey and Land Information Science              salis
+   Zeitschrift fur Vermessungswesen                 zfv
+
+Additional Journals
+
+   ACSM Bulletin                                    acsm
+ * Geospatial Solutions                             gss
+ * GeoWorld                                         geow
+   The Hydrographic Journal                         hj
+   Lighthouse                                       lh
+ * Point of Beginning (no authors/subtitles in toc) pob
+   Photogrammetric Engineering & Remote Sensing     pers
+
+Journals No Longer Covered
+
+   Cartography                                      cart
+ * EOM (only on-line w/o consistent organization)   eom
+ * Surveying World (no authors in toc)              sw
+   The Australian Surveyor (ceased publication)     tas
+
+--
+* Trade journals

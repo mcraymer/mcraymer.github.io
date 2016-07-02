@@ -1,0 +1,130 @@
+
+PROGRAM DATES
+Fortran Version 1.4 (04-06-11)
+----------------------------------------------------------------------
+
+Converts between different date formats, including:
+
+ - calendar date (year,month,day)
+ - year, day of year
+ - year with decimal
+ - GPS week, seconds of week
+ - Julian date
+
+DATES was developed by
+
+  Michael R. Craymer
+  Geodetic Survey Division, Geomatics Canada
+  615 Booth Street, Ottawa, Ontario  K1A 0E9
+  Tel. 613-947-1829, Fax. 613-992-6628
+  Email: craymer@nrcan.gc.ca
+
+
+PROGRAM OPERATION
+-----------------
+Execute DATES at the Unix or DOS prompt. The program prompts the user
+for the date format and input date. It then lists the date in the
+above formats. It also gives the day of the week.
+
+The GPS week is broadcast by GPS satellites as the number of weeks
+elapsed since 1980 Jan 6, modulo 1024. That is, the week number rolls
+over to 0 when it reaches 1024 weeks. The program DATES used to output
+both this broadcast GPS week as well as the total cumulative number
+of weeks since 1980 Jan 6 (no modulo 1024). Because no one really uses
+the former, DATES now only uses the total number of weeks for both
+input and output.
+
+
+VERSION HISTORY
+---------------
+Version 1.4 (03.07.24)
+- Corrected removal of input/output of GPS week rollover; removed
+  rollovers altogether.
+
+Version 1.3 (03.07.24)
+- Corrected typo in call to gps2jd for GPS week input (replaced dow
+  with sow).
+- Removed input/output of GPS week rollover.
+
+Version 1.2 (00.12.14)
+- Corrected output of seconds of week (converted to integer) for
+compatibility with Lahey LF95.
+- Output only total GPS week.
+
+Version 1.1 (99.07.09)
+- Corrected GPS week number to start at 0 instead of 1, following
+official definition.
+- Output both official GPS week number since 1024 rollover and total
+number of weeks since 1980.1.6.
+- Added reminder to include century when entering years
+
+Version 1.0 (99.04.26)
+- Original version
+
+
+DISTRIBUTION
+------------
+This software may be freely used and distributed. Portions of this
+software are protected by copyright law and may not be used for
+commerical purposes without permission from the author.
+
+Both the source and executable code for this software are available
+for HP Unix and DOS computers. The Fortran source code has been
+successfully compiled with the HP Fortran and Lahey F77L compilers. It
+should be portable to any other Fortran 77 compiler supporting the
+common "DO...END DO" and "$" edit descriptor extensions.
+
+The software can be obtained from the GHOST FTP archive at
+
+  <ftp://gdim.geod.nrcan.gc.ca/pub/utils/dates/>
+
+(login and password required). For information about GHOST, see the
+GHOST User's Group web page at
+
+  <http://www.geod.nrcan.gc.ca/~craymer/ghost/>
+
+The software can also be obtained from Mike Craymer's public software
+archive at the following anonymous FTP address
+
+  <ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/dates/>
+
+
+DISCLAIMER
+----------
+This software is provided on an "as is" basis. The members of GUG and
+Her Majesty the Queen in Right of Canada (Canada), represented by the
+Minister of Natural Resources and acting through GSD, make no
+guarantees, representations or warranties respecting this software,
+either expressed or implied, arising by law or otherwise, including
+but not limited to, effectiveness, completeness, accuracy or fitness
+for a particular purpose.
+
+Canada and the members of GUG shall not be liable in respect of any
+claim, demand or action, irrespective of the nature of the cause of
+the claim, demand or action alleging any loss, injury or damages,
+direct or indirect, which result from the use or possession of this
+software. The members of GUG shall indemnify and save harmless Canada
+against any such claims, demands or actions, as shall Canada
+indemnify and save harmless the members of GUG.
+
+
+FEEDBACK & SUPPORT
+------------------
+Please post any comments about the software, including bug reports
+and suggestions for improvements to the GHOST User's Group at:
+
+  <http://www.geod.nrcan.gc.ca/~craymer/ghost/>
+  <mailto:gug@geod.nrcan.gc.ca>
+
+If you are not a member of GUG, email Mike Craymer directly at
+
+  <mailto:craymer@nrcan.gc.ca>
+
+--
+The GHOST User's Group Forum
+Postings <mailto:gug@geod.nrcan.gc.ca>
+Subscribe <mailto:gug-request@geod.nrcan.gc.ca?body=subscribe>
+Unsubscribe <mailto:gug-request@geod.nrcan.gc.ca?body=unsubscribe>
+SW archives <ftp://ghostftp@gauss.geod.nrcan.gc.ca/>, Password req'd
+Web page (help) <http://www.geod.nrcan.gc.ca/~craymer/ghost/>
+Comments (List Manager) <mailto:craymer@nrcan.gc.ca>

@@ -1,0 +1,871 @@
+<HTML>
+<HEAD>
+<META NAME="description" CONTENT="Mike Craymer's On-Line Geodesy Resources,
+    A personal collection of resources for geodesy, GPS (Global Positioning System),
+    surveying, naviation and astronomy.">
+<META NAME="keywords" CONTENT="Geodesy, Marine Geodesy, Astronomy, Geophysics,
+    Geodetic, Geodetic Surveys, Geodetic Surveying, Geodetic Network,
+    Global Positioning System, GPS,
+    Positioning, Spatial Positioning, Reference System, Reference Frame,
+    Coordinates, Coordinate System, Reference Ellipsoid,
+    North American Datum, NAD 27, NAD27, NAD 83, NAD83,
+    World Geodetic System, WGS 84, WGS84,
+    International Terrestrial Reference System, ITRS,
+    International Terrestrial Reference Frame, ITRF,
+    International GPS Service, International GNSS Service, IGS,
+    International Association of Geodesy, IAG,
+    Transformation, Coordinate Transformation, Reference System Transformation,
+    Geodynamics, Crustal Motion, Post Glacial Rebound, Post-Glacial Rebound,
+    Glacial Isostatic Adjustment, GIA, PGR,
+    Surveying, Surveying Engineering, Geomatics, Geomatics Engineering,
+    Deformation, Deformation Analysis,
+    Engineering Surveys, Engineering Surveying,
+    Navigation, Maps, Mapping, Cartography,
+    Cadastre, Cadastral Mapping, Cadastral Surveying, Cadastral Surveys,
+    Numerical Modelling, Geodetic Software, Matlab Software, Fortran Software">
+<META NAME="ROBOTS" CONTENT="ALL">
+<TITLE>On-Line Geodesy Resources: GPS</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#DDDDDD" LINK="#33DD88" VLINK="#CC44BB"
+ BACKGROUND="images/night-sky.gif">
+
+<CENTER>
+[ <A HREF="index.html">Home</A> |
+<A HREF="geodesy-defn.html">What's Geodesy</A> |
+<A HREF="geodesy.html">Geodesy,Astronomy</A> |
+GPS |
+<A HREF="survey.html">Surveying,Maps,Gazetteers</A> |
+<A HREF="pubs.html">Publications</A> |
+<A HREF="science.html">Science,Math</A> |
+<A HREF="computers.html">Computers</A> |
+<A HREF="reference.html">Reference</A> |
+<A HREF="search.html">Internet Searching</A> |
+<A HREF="misc.html">News,Weather,Humor</A> ]
+<P>
+<IMG SRC="images/earth-spin-satellites.gif">
+<H1><SMALL>On-Line Geodesy Resources</SMALL><BR>
+Global Positioning System</H1>
+</CENTER>
+<P>
+<HR>
+<P>
+<B>Contents</B>
+    <UL>
+    <LI><A HREF="#igs">International GPS Service (IGS)</A>
+    <LI><A HREF="#solns">Coordinate/Velocity Solutions and Time Series</A>
+    <LI><A HREF="#archives">Other Global and Regional GPS Archives and Networks</A>
+    <LI><A HREF="#info">Other Sources of Official GPS Information</A>
+    <LI><A HREF="#status">GPS Status Reports</A>
+    <LI><A HREF="#iono">Geomagnetic/Ionospheric/Solar Reports</A>
+    <P>
+    <LI><A HREF="#online">On-Line GPS Data Processing</A>
+    <LI><A HREF="#software">Free/Shareware/Cheap GPS Software</A>
+    <LI><A HREF="#matlab">GPS-Related Toolboxes for MATLAB</A>
+    <P>
+    <LI><A HREF="#images">GPS Satellite Images</A>
+    <LI><A HREF="#usenet">GPS-Related Mailing Lists & Newsgroups</A>
+    <LI><A HREF="#general">General Information</A>
+    </UL>
+<P>
+<HR>
+<P>
+<A NAME="igs"></A>
+<B>International GPS Service (IGS)</B>
+    <UL>
+    <LI><A HREF="http://www.igs.org/">Central Bureau Home Page</A>
+    <LI><A HREF="http://www.igs.org/network/netindex.html">Tracking Network Information</A>
+    <LI><IMG SRC="images/new-tiny.gif" ALT="New"> <A HREF="http://www.igs.org/mail/index.html">IGS Mailing Lists</A>
+    <LI><A HREF="http://www.igs.org/components/compindex.html">IGS Data and Products</A>
+    <LI><A HREF="http://www.igs.org/organization/centers.html">IGS Data Centers</A>
+    <LI><A HREF="http://acc.igs.org/">IGS Analysis Center Coordinator</A>
+	<LI><A HREF="ftp://igs-rf.ign.fr/pub/">IGS Reference Frame Coordinator</A>
+		<UL>
+		<LI><A HREF="http://acc.igs.org/igs-frames.html">Chronology of IGS Reference Frames</A>
+		</UL>
+    <LI><A HREF="http://www.igs.org/network/join_igs.html">Procedures for Becoming an IGS Station</A>
+    <LI><A HREF="http://www.igs.org/network/guide_igs.html">Standards for IGS Stations and Operational Centers</A>
+    <LI><A HREF="http://www.igs.org/projects/tiga/">GPS Tide Gauge Benchmark Monitoring - Pilot Project</A>
+    <LI><A HREF="http://www.igs.org/projects/projindex.html">Working Groups</A>
+    <LI><B>Generated Products (orbits, clocks, EOPs, station positions)</B>
+        <UL>
+        <LI><A HREF="http://www.igs.org/components/prods.html">
+            IGS Central Bureau</A> (no station positions)
+        <LI><A HREF="ftp://cddis.gsfc.nasa.gov/pub/gps/products/">
+            Crustal Dynamnics Data Information System (CDDIS)</A> (organized by GPS week number)
+        <LI><A HREF="ftp://igs.ensg.ign.fr/pub/igs/products/">
+            Institut Geographique National (IGN), France</A> (organized by GPS week number)
+        <LI><A HREF="ftp://garner.ucsd.edu/pub/products/">
+            Scripps Orbit and Permanent Array Center (SOPAC)</A>
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/data/format/sp3_docu.txt">
+            SP3 Orbit Format</A>
+        <LI><A HREF="http://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex__cont.html">
+            SINEX (Solution INdependent EXchange) Format</A>
+        <LI><A HREF="http://www.geod.nrcan.gc.ca/~sinex/">
+            SINEX Related Products</A> (this site is password-protected -- contact
+        <A HREF="http://wwwint2.rncan.gc.ca/dps/index.cfm?fuseaction=phonedir.emplDet&amp;userId=12401&amp;userLang=E">Remi Ferland</A>
+        for access)
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/data/format/">
+            Other Product Formats</A>
+        <LI><A HREF="http://www.epncb.oma.be/IAG/snx.php">
+            SINEX Format Checker</A> (based on "sbuild" by David Lavallee, Delft University of Technology.
+            Email-based service that checks submitted files for SINEX format requirements.)
+        <LI><A HREF="http://sopac.ucsd.edu/scripts/convertDate.cgi">
+            Scripps Online GPS Date Converter</A> (converts dates between calendar date, modified
+            Julian date, decimal year, day of year and GPS week)
+        </UL>
+    <LI><B>Tracking Data</B>
+        <UL>
+        <LI><A HREF="http://cddis.gsfc.nasa.gov/">Crustal Dynamics Data Information System (CDDIS)</A>, NASA
+            <UL>
+            <LI><A HREF="http://cddis.gsfc.nasa.gov/gnss_datasum.html">GNSS Data</A>
+            <LI><A HREF="ftp://cddis.gsfc.nasa.gov/pub/gps/data/">FTP Archive</A>
+            <LI><A HREF="ftp://cddis.gsfc.nasa.gov/pub/gps/data/daily/">Daily data</A>
+            <LI><A HREF="ftp://cddis.gsfc.nasa.gov/pub/gps/data/hourly/">Hourly Data</A>
+            </UL>
+        <LI><A HREF="http://igs.ensg.ign.fr/">Institut Geographique National (IGN)</A>, France
+            <A HREF="ftp://igs.ensg.ign.fr/pub/igs/data/">FTP Archive & Daily Data</A>
+            <A HREF="ftp://igs.ensg.ign.fr/pub/igs/data/hourly/">Hourly Data</A>
+        <LI><A HREF="http://sopac.ucsd.edu/dataArchive/">
+            Scripps Orbit and Permanent Array Center (SOPAC)</A> --
+            <A HREF="ftp://garner.ucsd.edu/pub/rinex/">Daily Data</A> --
+            <A HREF="ftp://garner.ucsd.edu/pub/nrtdata/">Hourly Data</A>
+        <LI><A HREF="http://www.igs.org/components/formats.html">
+            Data Formats</A>
+            <UL>
+            <LI><A HREF="http://igscb.jpl.nasa.gov/igscb/data/format/rinex210.txt">
+                RINEX v2.10</A> (GPS & GLONASS observations, met data & navigation data)
+            <LI><A HREF="http://igscb.jpl.nasa.gov/igscb/data/format/rinex211.txt">
+                RINEX v2.11</A> (GPS & GLONASS observations, met data & navigation data)
+            <LI><A HREF="http://igscb.jpl.nasa.gov/igscb/data/format/rinex301.pdf">
+                RINEX v2.12</A> (GPS & GLONASS observations, met data & navigation data;
+                used for GNSS receivers reporting the C2 observable, currently considered
+                experimental by the IGS)
+            <LI><A HREF="http://igscb.jpl.nasa.gov/igscb/data/format/rinex301.pdf">
+                RINEX v3.01</A> (GPS & GLONASS observations, met data & navigation data;
+                used for GNSS receivers reporting the C2 observable, currently considered
+                experimental by the IGS)
+            <LI><A HREF="http://igscb.jpl.nasa.gov/igscb/mail/igsmail/1525">
+                Hatanaka Compact RINEX format/compression</A>
+                (<A HREF="http://terras.gsi.go.jp/ja/crx2rnx.html">RNXCMP software</A>)
+            <LI><A HREF="http://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex__cont.html">
+                SINEX</A> (station positions & velocities)
+            </UL>
+        <LI><A HREF="http://sopac.ucsd.edu/scripts/convertDate.cgi">
+            Scripps Online GPS Date Converter</A> (converts dates between calendar date, modified
+            Julian date, decimal year, day of year and GPS week)
+        </UL>
+    <LI><B>Site Information</B>
+        <UL>
+        <LI><A HREF="http://igs.org/network">Site Information</A>
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/pub/station/log/">Current Site Logs</A>
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/pub/station/oldlog/">Old Station Logs</A>
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/sitelog_instr.txt">
+            Instructions for Completing Site Log Files</A>
+        <LI><A HREF="http://slm.igs.org/slm.php">Site Log Manager</A> (password required)
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/blank.log">
+            Blank Site Log Form</A>
+        <LI><A HREF="http://igscb.jpl.nasa.gov/network/sitelog_tester.php">
+            Site Log Validation Tool</A>
+        <LI><A href="http://itrf.ensg.ign.fr/domes_desc.php?page=1">DOMES Numbers Description & Request</A>
+        <LI><A href="http://itrf.ensg.ign.fr/select.php">IERS Site Information & Selection</A>
+        <LI><A href="http://www.ngs.noaa.gov/CORS/">CORS Site Information</A>
+        <LI><A href="http://sopac.ucsd.edu/sites/">SOPAC GPS Site Information</A>
+        </UL>
+    <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/rcvr_ant.tab">
+        <B>Equipment Naming Conventions</B></A> (for receivers and antennas)
+    <LI><B>Antennas</B>
+        <UL>
+        <LI><A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/antenna.gra">
+            Antenna Diagrams</A> (for definition of antenna reference points)
+        <LI>IGS Phase Center Variations (compiled from different sources; use
+            for all IGS work)
+            <UL>
+            <LI>Absolute calibrations (<A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/igs05.atx">igs05.atx</A>,
+			    <A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/igs08.atx">igs08.atx</A>)
+            <LI>Relative calibrations -- no longer used (<A HREF="ftp://igscb.jpl.nasa.gov/igscb/station/general/igs_01.pcv">igs_01.pcv</A>)
+            </UL>
+        <LI><A HREF="http://www.ngs.noaa.gov/ANTCAL/">
+            NGS Antenna Phase Center Variations</A> by Gerry Mader, US NGS (includes
+            more antennas than in IGS compilation)
+        <LI><A HREF="http://gnpcvdb.geopp.de/pcvdb/GNPCVDB.html">
+            Geo++ GNPCVDB Antenna Database</A> (database of absolute robotic antenna
+            calibrations; IGS PCV values mostly based on these calibrations; access
+            to general info is free but acess to PCV calibrations requires a paid
+            license)
+		<LI><IMG SRC="images/new-tiny.gif" ALT="New"> <A HREF="http://igscb.jpl.nasa.gov/pipermail/igsmail/2011/007546.html">IGSMAIL-6356: Advice for coping with the change to IGS08+igs08.atx</A>
+        </UL>
+    <LI><A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/itrf96_97/">
+        <B>IGS Reference Frame Transformations</B></A>
+    </UL>
+<P>
+<A NAME="solns"></A>
+<B>Coordinate/Velocity Solutions and Time Series</B>
+    <UL>
+    <LI><A HREF="http://www.iers.org/IERS/EN/DataProducts/ITRF/itrf.html">
+        International Terrestrial Reference Frame (ITRF)</A> (from IERS in SINEX format; reference
+        frame upon which recent versions of WGS84 are based)
+	<P>
+    <LI><B>IGS Combined Coordinate and Velocity Solutions</B>
+        <UL>
+        <LI>Weekly and cumulative coordinate files in SINEX format organized by GPS week number. Weekly
+            coordinate solutions in Unix compressed files "igs*.snx.Z", cumulative coordinate and velocity
+            solutions in files "IGS*.snx.Z". Solutions without covariance matrix in files with extension
+            "ssc".
+        <LI><A HREF="ftp://cddis.gsfc.nasa.gov/pub/gps/products/">
+            Crustal Dynamnics Data Information System (CDDIS)</A>
+        <LI><A HREF="ftp://igs.ensg.ign.fr/pub/igs/products/">
+            Institut Geographique National (IGN), France</A>
+		<LI><A HREF="ftp://igs-rf.ign.fr/pub/">
+			IGS Reference Frame Coordinator Archive</A> (at Institut Geographique National - IGN)
+        </UL>
+	<P>
+<!--
+   <LI><A HREF="http://www.geod.nrcan.gc.ca/~sinex/">
+        IGS SINEX Related Products</A> (IGS-combined coordinates, ERPs and apparent geocenter estimates,
+        including weekly summary reports and residuals of combined products, from the IGS Reference Frame
+        Coordinator at Natural Resources Canada.
+        <UL>
+        <LI><A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/coord/">Weekly IGS Coordinate Time Series</A>
+            (<A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/README_coord">README</A>)
+        <LI><A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/res/">Weekly IGS Coordinate Residual Time Series
+            with respect to Cummulative Solution</A> (<A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/README_res">
+            README</A>)
+        <LI><A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/sum/">Weekly IGS Combination Summary Files</A>
+            (<A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/README_sum">README</A>)
+        <LI><A HREF="ftp://macs.geod.nrcan.gc.ca/pub/requests/sinex/discontinuities/">Time Series Discontinuities</A>
+        </UL>
+-->
+    <LI><A HREF="http://sideshow.jpl.nasa.gov/mbh/series.html">
+        JPL Global GPS Time Series</A>
+        (JPL's estimated coordinate velocity and time series for IGS and other
+        continuously operating GPS stations throughout North America)
+    <LI><A HREF="http://sopac.ucsd.edu/processing/">
+        Scripps Orbit and Permanent Array Center (SOPAC)</A>
+        (Scripp's estimated coordinate velocity and time series for IGS and other
+        continuously operating GPS stations throughout North America)
+        <UL>
+        <LI><A HREF="http://sopac.ucsd.edu/cgi-bin/sector.cgi">Coordinates</A>
+        <LI><A HREF="http://sopac.ucsd.edu/cgi-bin/refinedJavaTimeSeries.cgi">Time Series</A>
+        <LI><A HREF="http://sopac.ucsd.edu/cgi-bin/refinedModelVelocities.cgi">Velocities</A>
+        </UL>
+    <LI><A HREF="http://quake.wr.usgs.gov/research/deformation/gps/index.html">
+        U.S. Geological Survey's Earthquake Hazards Program</A>
+        (USGS's estimated coordinate velocities and time series for IGS and other
+        continuously operating GPS stations throughout North America)
+    <LI><A HREF="http://epncb.oma.be/IAG/">
+        IAG Subcommission 1.3 Working Group on Regional Dense Velocity Fields</A>
+        (Densification of the ITRF global reference frame by combining contributed regional velocity solutions)
+    <LI><A HREF="http://sps.unavco.org/crustal_motion/dxdt/intro/">
+        UNAVCO GPS Global Velocity Field (GPSVEL) Working Group</A>
+        (Synthesized data from numerous GPS studies used to produce a combined, consistent,
+        high quality global velocity field for the Earth's crust)
+    <LI><A HREF="http://www-gpsg.mit.edu/~tah/MIT_IGS_AAC/">
+        MIT Global Time Series Web Page</A>
+        (Time series and velocity estimates of GPS sites around the world from various sources of coordinate
+        solutions)
+    <LI><A HREF="http://tau.fesg.tu-muenchen.de/~iers/web/sinex/format.php">
+        SINEX (Solution INdependent EXchange) Format</A>
+    <LI><A HREF="http://sopac.ucsd.edu/scripts/convertDate.cgi">
+        Scripps Online GPS Date Converter</A> (converts dates between calendar date, modified
+        Julian date, decimal year, day of year and GPS week)
+    </UL>
+<P>
+<A NAME="archives"></A>
+<B>Other Global and Regional GPS Archives and Networks</B>
+    <UL>
+    <LI><A HREF="http://sopac.ucsd.edu/">Scripps Orbit and Permanent Array Center (SOPAC)</A>
+        (data and coordinate results for many continuous GPS networks worldwide, totaling hundreds of GPS sites;
+        includes an excellent interface with maps that faciliates finding stations and data)
+    <LI><A HREF="http://www.ngs.noaa.gov/CORS/">US NGS's Continuously Operating Reference Stations (CORS) Network</A>
+        (a network of continuously operating reference stations (CORS) that provide GPS
+        carrier phase and code range measurements in support of 3-dimensional positioning
+        activities throughout the United States)
+    <LI><A HREF="http://www.geod.nrcan.gc.ca/network_a/active_e.php">Canadian Active Control System (CACS)</A>
+        (a Canadian network of active control points (ACPs) that provides GPS carrier phase and code range
+        measurments in support of 3D positioning throughout Canada)
+    <LI><A HREF="http://www.scign.org/">Sourthern California Integrated GPS Network</A>
+        (an array of Global Positioning System (GPS) stations distributed throughout
+        southern California with emphasis on the greater Los Angeles metropolitan region)
+    <LI><A HREF="http://www.epncb.oma.be/">
+        European Reference Frame (EUREF) Permanent Network</A> (European permanent tracking stations
+        involved in the EUREF network, providing near real time high quality GPS data to local and
+        regional data centres)
+    <LI><A HREF="http://www.geod.nrcan.gc.ca/%7Ecraymer/naref/naref.html">
+        North American Reference Frame (NAREF) Working Group</A> (cooperative network of permanent
+        GPS tracking stations, providing high quality GPS coordinate solutions for the densification
+        of the ITRF in North America)
+    <LI><A HREF="http://www.unavco.org/facility/data/gsac/gsac.html">UNAVCO GPS Seamless Archive Centers (GSAC) Initiative</A>
+        (a method for finding and using GPS data stored at participating data centers, and
+        the implementation of a specific strategy to identify and retrieve GPS data sets)
+        <UL>
+        <LI><A HREF="http://gsac.ucsd.edu/">GPS Seamless Archive Data Center at SOPAC</A>
+        </UL>
+    </UL>
+<P>
+<A NAME="status"></A>
+<B>GPS Status Reports</B>
+    <UL>
+    <LI><A HREF="http://www.navcen.uscg.gov/gps/">
+        US Coast Guard Naviation Center</A> (official GPS support center for civilian users; information of
+        interest to civil users of GPS, including notices, advisories, notices of meetings, and technical
+        documentation)
+        <UL>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/status_and_outage_info.htm"> GPS Status Reports</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/ftp/gps/status.txt">Current Status</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/nanu.htm">Advisories</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/almanacs.htm">Almanacs</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/subscribe.htm">Subscriptions to Notices</A>
+        <LI><A HREF="http://www.navcen.uscg.gov//dgps/">DGPS Service</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/faq/gpsfaq.htm">FAQ</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/geninfo/default.htm">Reference Information</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/pubs/gps/icd200/default.htm">GPS
+            Interface Control Document (ICD-200c)</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/gps/modernization/default.htm">GPS
+            Modernization</A> (information on GPS III, and L2 & L5 proposals)
+        </UL>
+    <LI><A HREF="http://www.schriever.af.mil/GpsSupportCenter/">
+        GPS Support Center</A>, US Space Command (official GPS support center for DOD users)
+        <UL>
+        <LI><A HREF="http://www.schriever.af.mil/GpsSupportCenter/general_information.htm">General Information</A>
+        <LI><A HREF="http://www.schriever.af.mil/GpsSupportCenter/advisories.htm">Advisories</A>
+        <LI><A HREF="http://www.schriever.af.mil/GpsSupportCenter/performance_reports.htm">Performance Reports</A>
+        <LI><A HREF="http://www.schriever.af.mil/GpsSupportCenter/frequently_asked_questions.htm">Frequenty Asked Questions</A>
+        </UL>
+    <LI><A HREF="http://www.igeb.gov">
+        Interagency GPS Executive Board (IGEB)</A> (manages the Global Positioning System and its
+        U.S. Government augmentations)
+    <LI><A HREF="http://tycho.usno.navy.mil/gps.html">
+        USNO GPS Timing Operations</A>
+        <UL>
+        <LI><A HREF="http://tycho.usno.navy.mil/gpsinfo.html">GPS Overview</A>
+        <LI><A HREF="http://tycho.usno.navy.mil/gps_datafiles.html">GPS Data and Information Files</A>
+        <LI><A HREF="http://tycho.usno.navy.mil/gpscurr.html">Current GPS Status</A>
+        <LI><A HREF="http://tycho.usno.navy.mil/gpstt.html">GPS Time Transfer Operations</A>
+        </UL>
+    <LI><A HREF="http://www.nstb.tc.faa.gov/glonass/PAN_LAST.PDF">Latest SPS Performance Analysis (PAN) Report</A>
+        (FAA quarterly report monitoring SPS (single receiver, single frequency)
+        accuracy and other parameters at several sites in North America on a daily
+        basis)
+    <LI><A HREF="http://www.trimble.com/satview/">
+        SatView GPS Mission Planning</A> (satellite visibility plots, DOPs - no longer
+        interactive but software and latest ephemeris file are available for download)
+    <LI><A HREF="http://sirius.chinalake.navy.mil/cgi-bin/satpred-query">
+        GPS Satellites in View</A> (satellite azimuths & elevations - interactive!)
+    <LI><A HREF="http://sirius.chinalake.navy.mil/cgi-bin/satpred-query">
+        NASA's spacecraft tracking displays</A> (ineractive displays for tracking various spacecraft, including
+        world map, 3D and sky view displays).
+    <LI><A HREF="http://adn.agi.com/SatelliteOutageCalendar/SOFCalendar.aspx">
+        GPS Satellite Outage Calendar</A> (database of specific GPS satellite outages as reported in the NANUs;
+        access the database month by month or get a complete list going back to 1998)
+
+    </UL>
+<P>
+<A NAME="info"></A>
+<B>Other Sources of Official GPS Information & Services</B>
+    <UL>
+    <LI><A HREF="http://www.spacecom.af.mil/usspacecom/gps_support/">
+        US Space Command GPS Support Center</A> (official GPS web site)
+    <LI><A HREF="http://www.spaceflightnow.com/delta/d281/gpsconstellation.html">
+        Current GPS Constellation</A>
+    <LI><A HREF="http://164.214.2.59/GandG/sathtml/">NIMA Satellite Geodesy Home Page</A>
+        (access to the NIMA Precise Ephemeris (PE) and Earth Orientation Parameter
+        Prediction (EOPP) data files)
+    <LI><A HREF="http://www.unavco.ucar.edu/">UNAVCO: University NAVSTAR Consortium</A>
+        (supports GPS applications for high accuracy geoscience research)
+        <UL>
+        <LI><A HREF="http://www.unavco.ucar.edu/equipment/">
+            UNAVCO Equipment Support Page</A> (for info on GPS equipment)
+        </UL>
+    <LI><A HREF="http://www.navcen.uscg.gov/">
+        US Coast Guard Naviation Center</A> (information of interest to civil users of GPS, including
+        notices, advisories, SEM almanacs, notices of meetings, and technical documentation)
+        <UL>
+        <LI><A HREF="http://www.navcen.uscg.gov//dgps/">DGPS Service</A>
+        <LI><A HREF="http://www.navcen.uscg.gov/pubs/gps/icd200/default.htm">
+            GPS Interface Control Document (ICD-200c)</A> (defines the requirements related
+            to the interface between the Space Segment (SS) of GPS and the Navigation User
+            Segment (US), including definition of broadcast data, orbital elements and an
+            algorithm for computing satellite positions)
+        </UL>
+    <LI><A HREF="http://www.ccg-gcc.gc.ca/eng/CCG/DGPS_Home">
+        Canadian Coast Guard DGPS Service</A>
+    <LI><A HREF="http://gps.faa.gov/">US FAA Global Positioning System Product Team</A>
+        <UL>
+        <LI><A HREF="http://gps.faa.gov/Programs/WAAS/waas.htm">Wide Area Augmentation System (WAAS)</A>
+        <LI><A HREF="http://gps.faa.gov/Programs/LAAS/laas.htm">Local Area Augmentation System (LAAS)</A>
+        <LI><A HREF="http://gps.faa.gov/Programs/NSTB/NSTB.HTM">National Satellite Test Bed (NSTB)</A>
+        </UL>
+    <LI><A HREF="http://tycho.usno.navy.mil/gps.html">
+        USNO GPS Timing Operations</A>
+        <UL>
+        <LI><A HREF="http://tycho.usno.navy.mil/gps_datafiles.html">GPS Data and Information Files</A>
+    </UL>
+</UL>
+<P>
+<A NAME="iono"></A>
+<B>Geomagnetic/Ionospheric/Solar Reports</B>
+    <UL>
+    <LI><A HREF="http://www.sel.noaa.gov/">
+        Space Environment Center</A>, US National Oceanic and Atmospheric Administration
+        (provides space weather, reports alerts and warnings to the US and the world for
+        disturbances that can affect people and equipment working in space and on Earth.)
+        <UL>
+        <LI><A HREF="http://www.sel.noaa.gov/nav/nav.html">SEC Navigation Systems Page</A>
+        </UL>
+    <LI><A HREF="http://www.ngs.noaa.gov/CORS-Proxy/ionosphere/">
+        National Geodetic Survey</A>, US National Oceanic and Atmospheric Administration
+        (together with Space Environment Center, provides experimental ionospheric products
+        to help emergency managers and other users quickly assess the effects of solar storms
+        on Global Positioning System applications.)
+    <LI><A HREF="http://www.schriever.af.mil/55swxs">
+        USAF 55th Space Weather Squadron</A> (provides space environmental analysis, forecasts, and
+        warnings to enhance the capability of worldwide Department of Defense forces and other Federal
+        agencies.)
+    <LI><A HREF="http://www.nwra-az.com/nwra_spawx.html">
+        Northwest Research Associates - Space Weather Services</A>
+        (provides information ionospheric scintillation effects and predictions and real time space
+        weather indices)
+        <UL>
+        <LI><A HREF="http://www.nwra-az.com/spawx/spawx.html">Space Weather Indices</A>
+        <LI><A HREF="http://www.nwra-az.com/ionoscint/">Ionospheric scintillation predictions</A>
+        <LI><A HREF="http://137.229.36.30/cgi-bin/ashtech/tec.cgi">Real-Time Total Electron Content Measurements</A>
+            (from an Ashtech receiver in Alaska; part of the <A HREF="http://www.haarp.alaska.edu/haarp/index.html">High
+            Frequencyactive Auroral Research Program (HARP)</A>)
+        </UL>
+    <LI><A HREF="http://solar.uleth.ca/solar/">
+        Solar Terrestrial Dispatch</A>, Univ. of Lethbridge, Alberta, Canada
+        (provides information regarding the state of the sun and its effect on the earth
+        and the space environment near the earth.)
+    <LI><A HREF="http://www.geolab.nrcan.gc.ca/geomag/eng_main.html">
+        Canadian National Geomagnetism Program</A> Canadian National Geomagnetism Program
+        (monitors and predicts the Earth's ever-changing magnetic field throughout Canada,
+        on time-scales ranging from seconds to decades.)
+    <LI><A HREF="http://www.ips.oz.au/">
+        Ionospheric Prediction Service</A>, Australian Dept of Industry Science and Resources
+        (provides various radio propagation and space environment services.)
+    <LI><A HREF="http://science.nasa.gov/">
+        Science@NASA</A>
+        <UL>
+        <LI><A HREF="http://www.spaceweather.com/">Space Weather</A>
+        <LI><A HREF="http://sunspotcycle.com/">Sunspots and the Solar Cycle</A>
+        </UL>
+    <LI><A HREF="http://umbra.gsfc.nasa.gov/">
+        Solar Data Analysis Center</A>, NASA Goddard Space Flight Center
+    <LI><A HREF="http://windows.engin.umich.edu/spaceweather/">
+        University of Michigan's Space Weather Today</A>
+    <LI><A HREF="http://fdd.gsfc.nasa.gov/IGRF.html">
+        International Geomagnetic Reference Field (1995)</A>
+        (including free Fortran software to produce tables of values of geomagnetic information,
+        including magnetic declination)
+    </UL>
+<P>
+<A NAME="online"></A>
+<B>On-Line GPS Data Processing</B>
+    <UL>
+    <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/geomatics/geodetic-reference-systems/tools-applications/10925">
+        Canadian Spatial Reference System - Precise Point Positioning (CSRS-PPP)</A>
+        (from Geodetic Survey Division, Natural Resources Canada). A free
+        Web-based GPS precise point positioning service. Estimates coordinates
+        of a single site using the precise point positioning (PPP) method
+        (precise orbits and clocks). CSRS-PPP can process GPS observations in
+        RINEX format from single or dual-frequency GPS receivers operating in
+        static or kinematic mode. Results are provided in both ITRF or
+        NAD83(CSRS). Users are required to register for free and obtain a
+        password to use the service.
+    <LI><IMG SRC="images/new-tiny.gif" ALT="New"> <A HREF="http://apps.gdgps.net/">
+        Automatic Precise Positioning Service (APPS)</A>
+        (from Jet Propulsion Laboratory, California Institute of Technology). A
+        free GPS data processing service based on the Precise Point Positioning
+        (PPP) method used in the
+        <A HREF="http://www.unavco.org/facility/software/processing/gipsy/gipsy_info.html">GIPSY/OASIS-II (GOA-II)</A>
+        software. Estimates coordinates of a site at rest (static) or in motion
+        (kinematic) using RINEX observation files from single or dual-frequency
+        GPS receivers together with JPL precise orbits and clocks. Also suppports
+        near-real-time processing using the latest available orbits/clocks and
+        "most accurate" processing about a week after the data using the most
+        accurate orbit and clock information.
+    <LI><A HREF="http://sopac.ucsd.edu/scout.shtml">
+        Scripps Coordinate Update Tool (SCOUT)</A>
+        (from Scripps Orbit and Permanent Array Center). A free Web/FTP-based
+        GPS data processing service using the GAMIT software. Estimates
+        coordinates of a single site using IGS stations as fiducial points (you
+        can specify which to use or have SCOUT select the nearest ones). To use,
+        your RINEX file must be accessable via anonymous FTP or you must upload
+        it to their anonymous FTP server.
+    <LI><A HREF="http://www.ngs.noaa.gov/OPUS/">
+        OnLine Positioning User Service (OPUS)</A>
+        (from US National Geodetic Survey). A free Web-based GPS data processing
+        service based on NGS's
+        <A HREF="http://www.ngs.noaa.gov/GRD/GPS/DOC/toc.html">PAGES software</A>.
+        Allows users to submit their GPS data files in RINEX format to NGS,
+        where the data will be processed to determine a position using NGS
+        computers and PAGES software. Each RINEX file that is submitted will be
+        processed with respect to the 3 nearest national CORS sites.
+    <LI><A HREF="http://www.ga.gov.au/geodesy/sgc/wwwgps/">
+        AUSPOS -- Online GPS Processing Service</A>
+        (from Geoscience Australia). A free Web-based GPS data processing
+        service that allows users to submit dual frequency, geodetic quality,
+        GPS data in RINEX format observed in a 'static' mode and receive rapid
+        turn-around coordinates in ITRF or GDA. This service takes advantage of
+        both IGS products and the IGS GPS network using the
+        <A HREF="http://www.vmsi-microcosm.com/">MicroCosm Software System</A>
+        and works with data collected anywhere on Earth.
+    <LI><A HREF="http://gaps.gge.unb.ca/">GAPS -- GPS Analysis and Positioning Software</A>
+        (from University of New Brunswick); A free Web-based GPS precise point
+        positioning software service that processes submitted RINEX observation
+        files in either static and kinematic modes. Specifically uses the UNB3m
+        neutral atmospheric delay model. Solution can be optionally constrained
+        (weighted) to a priori coordinates (either specified or from RINEX
+        file). Results are return via email.
+    <LI><IMG SRC="images/new-tiny.gif" ALT="New"> <A HREF="http://magicgnss.gmv.com/">magicGNSS</A>
+        (from gmv); A free Web-based GPS precise point positioning service that
+        processes submitted RINEX observation files. Also apparently generates
+        precise orbits, clocks and tropospheric zenith delays.
+    <LI><A HREF="http://gge.unb.ca/Resources/PPP/">Precise Point Positioning Software Centre</A>
+        (from Univeristy of New Brunswick, created under the auspices of the
+        'Geomatics for Informed Decisions (GEOIDE) Network of Centres of
+        Excellence Project 31); compare solutions from online PPP applications.
+        Submitted RINEX observation files are processed by different online PPP
+        applications, including CSRS-PPP (NRCan), GAPS (UNB) and Auto-GIPSY
+        (JPL). Results are graphically compared for easy comparison.
+    <!-- Out of business?
+    <LI><A HREF="http://www.dgps.com/inversemail.asp">
+        DCI Wide Area DGPS Correction Service</A>
+        A free mail-based DGPS correction service. Email uncorrected NMEA-format data files
+        to DCI and corrected results will be returned via email.
+    -->
+    <LI><A HREF="http://ucscgi2.ncl.ac.uk/~nkn3/">SINEX Format Checker</A>
+        (from Konstantin Nurutdinov, University of Newcastle). Checks SINEX
+        files with SLR or GPS data for SINEX format requirements and values from
+        SITE/ID and SITE/ECCENTRICITY blocks. [This service seems to have been
+        removed.]
+    <LI><A HREF="http://sopac.ucsd.edu/convertDate.shtml">SOPAC Online GPS Date Converter</A>
+        (from <A HREF="http://sopac.ucsd.edu/">Scripps Orbit and Permanent Array Center</A>).
+        Converts between various date formats, including GPS week + day of week,
+        year + day of year, decimal year, modified Julian date, year + month +
+        day.
+    <LI><A HREF="http://www.ngs.noaa.gov/CORS/Gpscal.shtml">GPS Calendar</A>
+        (from US National Geodetic Survey). Provides calendar date, day of year
+        and GPS week
+    </UL>
+<P>
+<A NAME="software"></A>
+<B>Free/Shareware/Cheap GPS Software</B>
+    <UL>
+    <LI><A HREF="http://www.nrcan.gc.ca/earth-sciences/geomatics/geodetic-reference-systems/tools-applications/10925">CSRS-PPP: Canadian Spatial Reference System - Precise Point Positioning</A>
+        (from Geodetic Survey Division, Natural Resources Canada). Performs precise point positioning to the
+        metre level using psuedo-range data with precise ephemerides and clock corrections> No DGPS base
+        stations or correction services are needed. Runs on Windoze computers. Soon be replaced by CSRS-PPP
+        software and on-line service for precise point positioning to cm-level with carrier phase data.
+    <LI><A HREF="http://gipsy.jpl.nasa.gov/orms/goa/">GIPSY/OASIS-II (GOA-II)</A>
+        (from Jet Propulsion Laboratory, NASA, Pasadena, CA). A state-of-the-art, high-precision GPS data
+        processing system for point positioning and orbit determination. Available free of charge to the
+        international research community. Requires previous GIPSY experience or a formal training course. For
+        more simplified coordinate estimation applications, check out the
+        <A HREF="http://www.unavco.org/facility/software/processing/gipsy/auto_gipsy_info.html">Auto Gipsy</A>
+        service (see above).
+    <LI><A HREF="http://bowie.mit.edu/%7Esimon/gtgk/">GAMIT-GLOBK</A>
+        (from Department of Earth Atmospheric and Planetary Sciences, MIT). Another state-of-the-art, high-precision
+        GPS data processing system for long baseline and orbit determination. Available free of charge for
+        non-commerical purposes. GAMIT is collection of programs used for the analysis of GPS data and determination
+        of orbits. GLOBK is a Kalman filter whose primary purpose is to combine various geodetic solutions such as
+        GPS, VLBI, and SLR experiments.
+    <LI><A HREF="http://www.ngs.noaa.gov/">US National Geodetic Survey</A>
+        <UL>
+        <LI><A HREF="http://www.ngs.noaa.gov/GRD/GPS/DOC/toc.html">PAGES</A>.
+            Yet another state-of-the-art, high-precision GPS data processing system for long baseline and orbit
+            determination. Available free of charge to state geodetic agencies and research institutions. Requires
+            previous PAGES experience or training at NGS. Documentation is available online at
+            <A HREF="http://www.grdl.noaa.gov/GRD/GPS/DOC/toc.html">http://www.grdl.noaa.gov/GRD/GPS/DOC/toc.html</A>.
+            For further information, contact Mark Shenewerk at <A HREF="mailto:mark@ness.grdl.noaa.gov">mark@ness.grdl.noaa.gov</A>.
+        <LI>OMNI [No longer available]
+            A more basic GPS data processing software package.
+        <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/Htdp/Htdp.html">HTDP: Horizontal Time Dependent Positioning</A>
+            Predicts horizontal displacements and velocities related to crustal motion and transforms positions to
+            specified epochs and coordinate reference frames. Can also be used to only transform coordinates between
+            difference reference frames.
+        <LI><A HREF="http://www.ngs.noaa.gov/PC_PROD/pc_prod.shtml">NGS PC Software</A>
+            Free geodetic software developed by NGS, including their 3D network adjustment software
+            ADJUST.
+        <LI><A HREF="http://www.ngs.noaa.gov/TOOLS/">NGS Geodetic Tool Kit</A>.
+            A collection of on-line interactive software utilities for solving a variety of geodetic
+            problems. Most software can also be downloaded to run locally.
+        </UL>
+    <LI><A HREF="http://www.bernese.unibe.ch/">Bernese GPS Software</A>
+        (from the Astronomisches Institut der Universitat Bern, Switzerland); included only for
+        completeness, this very expensive, state-of-the-art GPS processing system is similar to GIPSY and GAMIT.
+        It is a high accuracy GPS application for long baselines, orbit determination, and more. Available
+        only commericially at a very high cost.
+    <LI><A HREF="http://www.unavco.org/facility/software/software.html">UNAVCO: University NAVSTAR Consortium</A>.
+        A collection of links to GPS software for a variety of data management tasks, including data
+        logging, translation, processing.
+        <UL>
+        <LI><A HREF="http://www.unavco.org/facility/software/download_transfer/download_transfer.html">Downloading & Data Transfer</A>
+            <UL>
+            <LI><A HREF="http://sharc.sourceforge.net/">Sharc & Schedg</A>
+                (from Keith Stark; Linux Freeware). Linux utilities for automated GPS data aquisition and
+                management.
+            <LI><A HREF="http://facility.unavco.org/software/download_transfer/trimble/lapdogs.html">LAPDOGS -- Local Automated Process for Downloading of Global Sites</A>
+                (from UNAVCO; Linux Freeware). A set of programs and scripts to automate the downloading
+                of Trimble receivers from UNIX platforms. Utilizes the the Trimble R-Utilities (also available
+                from UNAVCO) in order to download, rename data files, and purge the downloaded files from
+                the receiver memory.
+            </UL>
+        <LI><A HREF="http://www.unavco.org/facility/software/preprocessing/preprocessing.html">Pre-Processing</A>
+            <UL>
+            <LI><A HREF="http://www.unavco.org/facility/software/teqc/teqc.html">TEQC</A>
+                (translates, edits and quality checks GPS/GLONASS/SBAS data)
+            </UL
+        <LI><A HREF="http://www.unavco.org/facility/software/processing/processing.html">Processing</A>
+        </UL>
+    <LI><A HREF="http://www.geoima.de/software/xraps/e_xraps.html">XRapS</A>
+        (from Andreas Mathes, geoIma). A freeware version of the commercial XrapS GPS post-processing software
+        restricted to short baselines in rapid static mode.
+    <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/goad/">DRIVER</A> (from Clyde Goad, former
+        OSU professor; includes Fortran and C source versions; unsupported). DRIVER is a package of
+        C/Fortran functions/subroutines supporting the development of GPS postprocessing applications.
+        An example pseudo-range point positioning application is provided.
+    <LI><A HREF="http://callisto.worldonline.nl/~samsvl/software.htm">Sam's GPS Software</A>
+        (from <A HREF="http://callisto.worldonline.nl/~samsvl/">Sam Storm van Leeuwen</A>; algorithms and
+        Turbo Pascal source code). A collection of GPS data processing algorithms and software: "all steps
+        from raw data to position calculation explained".
+    <LI><A HREF="http://www.ngs.noaa.gov/gps-toolbox/">The GPS Toolbox Archive</A>
+        (from Stephen Hilla & Mike Craymer, editors of the column "The GPS Toolbox" in the journal GPS Solutions).
+        A collection of software from their column dedicated to highlighting algorithms utilized by GPS engineers
+        and scientists.
+    <LI><A HREF="http://sopac.ucsd.edu/scripts/convertDate.cgi">SOPAC Online GPS Date Converter</A>
+        (from <A HREF="http://sopac.ucsd.edu/">Scripps Orbit and Permanent Array Center</A>).
+        Converts between various date formats, including GPS week + day of week, year + day of year,
+        decimal year, modified Julian date, year + month + day.
+    <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/dates/">DATES</A>
+        (from <A HREF="http://www2.geod.nrcan.gc.ca/%7Ecraymer/">Mike Craymer</A>).
+        Fortran software to convert between different date formats, including year + month + day,
+        year + day of year, year + decimal year, GPS week + seconds of week and Julian date.
+    <LI><A HREF="http://www.iau-sofa.rl.ac.uk/">SOFA: Standards of Fundamental Astronomy</A>
+        (from <A HREF="http://iau.org/">International Astronomical Union</A>). A free software collection
+        of constants, algorithms and procedures that implement standard models used in fundamental astronomy.
+    <P>
+    <LI><A HREF="http://gpsinformation.net/">gpsinformation.net</A>
+        (by Joe Mehaffey and Jack Yeazel). Extensive collection of links to GPS software for communicating with
+        GPS receivers, data logging, data computations, etc.
+    <LI><A HREF="http://www.gpsy.com/gpsinfo/software.html">Macintosh, Windows and Newton GPS Software</A>
+        (by <A HREF="http://www.gpsy.com/">GPSy</A>). A somewhat dated (2000) collection of sources of GPS
+        software.
+    <LI><A HREF="http://www.vancouver-webpages.com/peter/">Peter Bennett's GPS and NMEA Site</A>.
+        Information on support/software for a variety of handheld receivers and NMEA interfaces
+    <LI><B>Selected Software</B>
+        <UL>
+        <LI><A HREF="http://www.gpsy.com/">GPSy -- Macintosh GPS Communications</A>
+            (from <A HREF="http://www.gpsy.com/">Global Mapping Systems</A>; Mac ~US$50). A Macintosh GPS communications and GIS
+            mapping program that connects Macs to a broad range of GPS navigational units and has advanced mapping,
+            logging, and data transfer features. Pro version also avaialble with better map support, DGPS corrections
+            and more (~$150).
+        <LI><A HREF="http://www.macgpspro.com/">MacGPSPro</A>
+           (from <A HREF="http://www.macgpspro.com/">James Associates</A>; Mac ~US$40). Software for linking any
+            <A HREF="http://www.garmin.com/">Garmin</A> GPS receiver to any Macintosh and allows the importing of
+            maps from a wide variety of sources.
+        <LI><A HREF="http://www.gpsnavx.com/">GPSNavX</A>
+           (from <A HREF="http://www.gpsnavx.com/">GPSNavX</A>; Mac ~US$240, free demo available). Real-time display
+           of position on full color charts, trip planning trips and charting, waypoints and routes can be transferred
+           from and to a GPS receiver. Tracks can only be transferred from the GPS receiver to the program.
+        <LI><A HREF="http://hyperarchive.lcs.mit.edu/HyperArchive/Abstracts/sci/gps-view-10.hqx.txt">GPSview</A>
+            (from Craig R. Burton; Mac Freeware). A rather dated Mac program that provides dynamic polar plots of GPS satellites
+            in view from a specific position.
+            [<A HREF="http://hyperarchive.lcs.mit.edu/HyperArchive/Archive/sci/gps-view-10.hqx">InfoMac Download</A>]
+        <LI><A HREF="http://digilander.libero.it/faure/mygpseng.html">MyGPS</A>
+            (from <A HREF="mailto:faure@tiscali.it">Paolo Faure Ragani</A>; Windows Freeware). Software for the
+            creation and the management of longitude and latitude calibrated maps. Can define points of interest
+            (waypoints), create routes (route points), and visualize track paths (trackpoints).
+        <LI><A HREF="http://www.gpstm.com/">GPS TrackMaker</A>
+            (from <A HREF="http://www.gpstm.com/gtmpro/email_eng.htm">Odilon Ferreira Junior</A>; Windows Freeware).
+            Software for GPS communications, mapping and data analysis. Can define waypoints, routes and tracklogs.
+        <LI><A HREF="http://www.gpsu.co.uk/">GPS Utility</A>
+            (from <A HREF="mailto:murphy@gpsu.co.uk">GPS Utility Limited</A>; Windows Limited Freeware Version &
+            US$40 Commercial Version). Provides management and manipulation of GPS information and transfer data
+            from/to GPS receivers. Includesmoving map displays, conversion between datums, editing waypoints,
+            routes and tracks.
+        <LI><A HREF="http://artico.lma.fi.upm.es/numerico/miembros/antonio/async/">ASYNC & GAR2RNX</A>
+            (from <A HREF="mailto:ant@fi.upm.es">Antonio Tabernero Galan; Windows/Linux Freeware)</A>. Logs raw
+            data from Garmin GPS12 (or XL) receivers and convert to RINEX format for further post-processing.
+        <LI><A HREF="http://home-2.worldonline.nl/~samsvl/">Sam's GPS GPS Software Pages</A>
+            (from Sam Storm van Leeuwen; Windows Freeware). Step-by-step algorithms and software for GPS position
+            calculations.
+        <LI><A HREF="http://gpsdrive.kraftvoll.at/">GpsDrive</A> (from Fritz Ganter; Linux
+            Donationware). GPS navigation system that displays positions provided by NMEA-capable GPS receivers
+            on a zoomable map.
+        <LI><A HREF="http://roadmap.digitalomaha.net/">RoadMap</A> (from Pascal Martin; Linux/Unix Freeware).
+            GPS Navigation system that displays a street map, tracks the position provided by a NMEA-compliant
+            GPS receiver, identifies the street matching this GPS position and announces the name of the crossing
+            street at the next intersection.
+        </UL>
+    </UL>
+<P>
+<A NAME="matlab"></A>
+<B>GPS-Related Toolboxes for MATLAB</B><BR>
+(* Reviewed in GPS World, September 1998)
+    <UL>
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=41">Constellation Toolbox*</A>
+        (by Constell Inc.). A comprehensive simulation and analysis package for satellite constellations.
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=129">GNSS Toolbox*</A>
+        (by Orion Dynamics and Control, Inc). Analysis and simulation software for GPS and GLONASS navigation systems.
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=122">GPS Data Analysis Toolbox*</A>
+        (by NAVSYS Corporation). Customized MATLAB based tools for GPS data analysis.
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=391">GPS Receiver Toolbox</A>
+        (by Data Fusion Corporation). MATLAB routines that comprise an intermediate frequency GPS software receiver.
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=108">GPS Software Toolbox</A>
+        (by Lupash Consulting).  Design, analysis, and simulation tools for Global Positioning System.
+    <LI><A HREF="http://www.mathworks.com/products/connections/product_main.shtml?prod_id=210">Satellite Navigation (SatNav) Toolbox*</A>
+        (by GPSoft LLC). Simulation and analysis software for GPS and GNSS.
+    <LI><A HREF="http://www.ngs.noaa.gov/gps-toolbox/Borre.htm">GPS MATLAB Tools at Aalborg University</A>
+        (by Kai Borre, Aalborg University). A collection of MATLAB files for the GPS Solutions article "GPS MATLAB Tools at Aalborg
+        University", Volume 4, Number 3, January 2001 (similar to above MATLAB software for Linear Algebra, Geodesy & GPS).
+    <LI><A HREF="http://www.kom.auc.dk/~borre/matlab/">Linear Algebra, Geodesy & GPS M-Files</A>
+        (by Kai Borre, Aalborg University). A collection of MATLAB files for the book Linear Algebra, Geodesy and GPS, by Gilbert
+        Strang and Kai Borre.
+    <LI><IMG SRC="images/new-tiny.gif" ALT="New"> <A HREF="http://gps.aau.dk/softgps/">softGPS</A>
+        (by the Danish GPS Center, Aalborg University). A software-defined receiver (SDR) for GPS and Galileo signals based
+        on the book <A HREF="http://www.springer.com/birkhauser/engineering/book/978-0-8176-4390-4">A Software-Defined GPS and Galileo Receiver</A>
+        by Kai Borre et al. (2007).
+    <LI><A HREF="http://mms.geomatics.ucalgary.ca/Research/Tech%20transfer/INS_toolbox.htm">Aided Inertial Navigation System (AINS) Toolbox</A>
+        (by Naser El-Sheimy and Eun-Hwan Shin, The University of Calgary).
+    <LI><A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/software/matlab/geodetic/">Geodetic Toolbox</A>
+        (by <A HREF="http://www2.geod.nrcan.gc.ca/%7Ecraymer/">Mike Craymer</A>).
+        A collection of MATLAB functions/scripts for general problems in geodesy.
+    </UL>
+<P>
+<A NAME="images"></A>
+<B>GPS Satellite Images</B>
+    <UL>
+    <!--
+    <LI><A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/resource/gallery/">USAF Gallery of GPS Photos</A><BR>
+        <FONT COLOR="#FF0000"><B>*** Note ***</B> This web site is no longer accessable [2002.05.04]</FONT>
+    -->
+    <LI><A HREF="http://lmms.external.lmco.com/photos/military_space/global_pos_sat_2r_gps_2r/global_pos_sat_gps.html">
+        GPS Satellite Photos from Lockheed Martin</A> (in both low and high resolution formats)
+    <LI><A HREF="images/gps-block2f-jpo.gif">GPS Block IIF Satellite</A> (from
+        <A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/">USAF</A>, 384KB)
+    <LI><A HREF="images/gps-block2r-lm.jpg">GPS Block IIR Satellite</A> (drawing from
+        <A HREF="http://lmms.external.lmco.com/photos/military_space/global_pos_sat_2r_gps_2r/global_pos_sat_gps.html">
+        Lockheed Martin Space Systems</A>, 176 KB;
+        <A HREF="images/gps-block2r-lm-high.jpg">high resolution</A>, 1.8 MB)
+    <LI><A HREF="images/gps-block2r-jpo.gif">GPS Block IIR Satellite</A> (from
+        <A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/">USAF</A>, 135KB;
+        <A HREF="images/gps-block2r-jpow.gif">white background</A>, 100KB)
+    <LI><A HREF="images/gps-block2a-slim.gif">GPS Block IIA Satellite</A> (by Slim Films, 179KB)
+    <LI><A HREF="images/gps-block2a-chrysler.gif">GPS Block IIA Satellite</A> (from Chrysler ad, 112KB)
+    <LI><A HREF="images/gps-block2a-canspace.gif">GPS Block IIA Satellite</A> (from
+        <A HREF="http://degaulle.hil.unb.ca/Geodesy/CANSPACE.html">CANSPACE</A>, 121KB)
+    <LI><A HREF="images/gps-block2a-dana.gif">GPS Block IIA Satellite</A> (from Peter Dana's
+        <A HREF="http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">GPS Overview</A>, 14KB)
+    <LI><A HREF="images/gps-block2a-jpolab.gif">GPS Block IIA Satellite in Lab</A>
+        (<A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/">USAF</A> photo, 99KB)
+    <LI><A HREF="images/gps-block2a-jporocket.gif">GPS Block IIA Satellite in Rocket</A>
+        (<A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/">USAF</A> photo, 139KB)
+    <LI><A HREF="images/gps-block2a-jpolaunch.gif">GPS Block IIA Satellite Launch</A>
+        (<A HREF="http://www.laafb.af.mil/SMC/CZ/homepage/">USAF</A> photo from
+        <A HREF="http://www.flatoday.com/space/">FLORIDA TODAY Space Online</A>, 79KB)
+    <LI><A HREF="images/gps-block2a-baker.gif">GPS Block IIA Satellite</A> (by
+        <A HREF="mailto:gbaker@nrcan.gc.ca">Gord Baker</A>, 34KB;
+        <A HREF="ftp://ftp.geod.nrcan.gc.ca/pub/GSD/craymer/images/gpsbaker.zip">300 dpi postscript image</A>), 1.2MB)
+    <LI>GPS Block II Satellites with Laser Ranging Retroreflectors [
+        <A HREF="images/gps-block2-nasa.txt">Read Me</A>,
+        <A HREF="images/gps-block2-nasa1.gif">Drawing 1 (60KB)</A>,
+        <A HREF="images/gps-block2-nasa2.gif">Drawing 2 (38KB)</A> ] (NASA line drawings from
+        <A HREF="http://degaulle.hil.unb.ca/Geodesy/CANSPACE.html">CANSPACE</A>)
+    <LI><A HREF="images/gps-block1-anon.gif">GPS Block I Satellite</A> (line drawing, source unknown, 11KB)
+    </UL>
+<P>
+<A NAME="usenet"></A>
+<B>GPS-Related e-Mail Lists & Newsgroups</B>
+    <UL>
+    <LI><A HREF="http://www.unb.ca/GGE/Resources/Canspace.txt">Canadian Space Geodesy Forum (CANSPACE) e-Mail List</A>
+    <LI><A HREF="http://groups.yahoo.com/group/macmap/">MacMap e-Mail List</A>
+    <LI><A HREF="news:sci.geo.satellite-nav">sci.geo.satellite-nav</A>
+    <LI><A HREF="news:sci.space.science">sci.space.science</A>
+    <LI><A HREF="news:sci.space.tech">sci.space.tech</A>
+    <LI><A HREF="http://www.cis.ohio-state.edu/hypertext/faq/usenet/space/top.html">Frequenty Asked Questions in Space Science</A>
+    </UL>
+<P>
+<A NAME="general"></A>
+<B>General Information</B>
+    <UL>
+    <LI><A HREF="http://www.af.mil/news/factsheets/NAVSTAR_Global_Positioning_Sy.html">
+        The NAVSTAR Global Positioning System</A> (U.S. Air Force Fact sheet)
+    <LI><A HREF="http://www.navcen.uscg.gov/gps/geninfo/2001SPSPerformanceStandardFINAL.pdf">
+        GPS Performance Standard</A>
+    <LI><A HREF="http://www.navcen.uscg.gov/gps/modernization/default.htm">
+        GPS Modernization</A> (documents supporting GPS III and the L2 and L5 proposals)
+    <LI><A HREF="http://gps.faa.gov/">US FAA Satellite Navigation Product Teams</A>
+        (GPS basics, FAA programs, library, news)
+    <LI><A HREF="http://www.colorado.edu/geography/gcraft/notes/gps/gps_f.html">
+        Global Positioning System Overview by Peter Dana</A> (part of
+        <A HREF="http://www.colorado.edu/geography/gcraft/contents.html">The Geographer's Craft</A>
+        course material. Selected as one of the "Best of the Net" sites by GIS World)
+    <LI><A HREF="http://www.gmat.unsw.edu.au/snap/gps/about_gps.htm">
+        Univ. of New South Wales GPS Tutorials</A> (principles and practice of GPS
+        surveying, basic GPS positioning, GPS glossary, satellite track plots)
+    <LI><A HREF="http://gauss.gge.unb.ca/GPS.INTERNET.SERVICES.HTML">
+        Navstar GPS Internet Connections</A> (good selection of online GPS resources)
+    <LI><A HREF="http://www.navtechgps.com/">Navtech Seminars and GPS Supply</A>
+        (books, GPS equipment and software)
+    <LI><A HREF="http://www.gpsworld.com/article/features.htm#columns">
+        GPS World's Innovation Columns</A>
+        (excellent introductory and technical articles on a variety of GPS-related topics.)
+    <LI><A HREF="http://www.spatial.maine.edu/~leick/gpshome.htm">
+        Alfred Leick's GPS Home Page</A> (comprehensive list of GPS resources, including his GPS-related
+        <A HREF="http://www.spatial.maine.edu/%7Eleick/pubs.htm">publications</A> available on-line)
+    <LI><A HREF="http://www.anser.org/publications/gps-news/">
+        GPS For Air and Space Power</A> (an informal newletter to the US Air Force community)
+    <LI><A HREF="http://www.ggrweb.com/">
+        GeoWeb Interactive</A> (for GPS Receiver Database)
+    <LI><A HREF="http://gpsinformation.net/">gpsinformation.net</A>
+        (by Joe Mehaffey and Jack Yeazel. Extensive resources for GPS including reviews, FAQs, tutorials,
+        instructions, and links to hardware, software, accessories and vendors)
+    <LI><A HREF="http://www.gpsy.com/gpsinfo/">
+        Karen Nakamura's GPS Resource Library</A>
+    <LI><A HREF="http://www.edu-observatory.org/gps/gps.html">Sam Wormley's Global Positioning System (GPS) Resources</A>
+    <LI><A HREF="http://mywebpages.comcast.net/dmilbert/softs/index.html">Denis Milbert's GPS Software</A>
+    <LI><A HREF="http://home-2.worldonline.nl/~samsvl/">
+        Sam Storm van Leeuwen's GPS Raw Data Pages</A>
+        (info & tests of low cost receivers, antennas, software algorithms, and more)
+    <LI><A HREF="http://www.vancouver-webpages.com/peter/">
+        Peter Bennet's GPS and NMEA Site</A>
+        (information on GPS, NMEA and support/software for a variety of handheld receivers)
+    <LI><A HREF="http://www.ngs.noaa.gov/FGCS/info/sans_SA/">
+        GPS Accuracy Without S/A</A> (nice set of analyses by NGS)
+    <LI><A HREF="http://www.esa.int/export/esaNA/index.html">European Space Agency Navigation Site</A>
+        <UL>
+        <LI><A HREF="http://www.esa.int/export/esaNA/GGGMX650NDC_index_0.html">Galileo</A> (ESA's own satellite-based global naviation system)
+        <LI><A HREF="http://www.esa.int/export/esaNA/GGG63950NDC_index_0.html">EGNOS</A> (European Geostationary Navigation Overlay Service)
+        <LI><A HREF="http://www.esa.int/navigation/egnos-pro">EGNOS for Professionals</A> (latest information from ESA on the implementation of EGNOS)
+        </UL>
+    <LI><A HREF="http://www.stjarnhimlen.se/comp/time.html">Time Scales</A> (by Paul Schlyter)
+    <LI><A HREF="http://www.ngs.noaa.gov/CORS/Gpscal.html">NGS GPS Calendar</A>
+        (provides calendar date, day of year and GPS week)
+    <LI><A HREF="http://www.wired.com/news/culture/0,1284,62808,00.html">16,000 Things To Do With GPS</A>
+    </UL>
+<P>
+<HR>
+<CENTER>
+[ <A HREF="index.html">Home</A> |
+<A HREF="geodesy-defn.html">What's Geodesy</A> |
+<A HREF="geodesy.html">Geodesy,Astronomy</A> |
+GPS |
+<A HREF="survey.html">Surveying,Maps,Gazetteers</A> |
+<A HREF="pubs.html">Publications</A> |
+<A HREF="science.html">Science,Math</A> |
+<A HREF="computers.html">Computers</A> |
+<A HREF="reference.html">Reference</A> |
+<A HREF="search.html">Internet Searching</A> |
+<A HREF="misc.html">News,Weather,Humor</A> ]
+<P>
+<ADDRESS>
+Last Revised 2015-08-21
+</ADDRESS>
+<P>
+<A HREF="http://www.apple.com/"><IMG BORDER="0" SRC="images/macmade.gif"
+WIDTH="88" HEIGHT="31" ALIGN=bottom NATURALSIZEFLAG="3" ALT="MacMade"></A>
+</CENTER>
+</P>
+</BODY>
+</HTML>
